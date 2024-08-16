@@ -1,5 +1,11 @@
+require:
+  - rubocop-sorbet
+
 AllCops:
   NewCops: enable
 
 Style/Documentation:
   Enabled: false
+
+Sorbet/StrictSigil:
+  Enabled: true
