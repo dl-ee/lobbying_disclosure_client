@@ -9,3 +9,10 @@ Style/Documentation:
 
 Sorbet/StrictSigil:
   Enabled: true
+  Exclude:
+    - 'test/**/*'
+
+Sorbet/TrueSigil:
+  Enabled: true
+  Include:
+    - 'test/**/*'

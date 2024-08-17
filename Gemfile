@@ -9,3 +9,8 @@ group(:development) do
   gem 'sorbet'
   gem 'tapioca', require: false
 end
+
+group(:test) do
+  gem 'minitest', require: false
+  gem 'mutex_m', require: false
+end
