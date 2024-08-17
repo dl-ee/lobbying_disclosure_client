@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 group(:development) do
+  gem 'rake', require: false
   gem 'rubocop', require: false
   gem 'rubocop-sorbet', require: false
   gem 'sorbet'

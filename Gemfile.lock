@@ -21,6 +21,7 @@ GEM
     prism (0.30.0)
     racc (1.8.1)
     rainbow (3.1.1)
+    rake (13.1.0)
     rbi (0.1.14)
       prism (>= 0.18.0, < 1.0.0)
       sorbet-runtime (>= 0.5.9204)
@@ -80,6 +81,7 @@ DEPENDENCIES
   lobbying_disclosure_client!
   minitest
   mutex_m
+  rake
   rubocop
   rubocop-sorbet
   sorbet
