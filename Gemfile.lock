@@ -53,6 +53,7 @@ GEM
       sorbet-static (= 0.5.11519)
     sorbet-runtime (0.5.11519)
     sorbet-static (0.5.11519-universal-darwin)
+    sorbet-static (0.5.11519-x86_64-linux)
     sorbet-static-and-runtime (0.5.11519)
       sorbet (= 0.5.11519)
       sorbet-runtime (= 0.5.11519)
@@ -79,8 +80,8 @@ GEM
       yard
 
 PLATFORMS
-  ruby
   x86_64-darwin-23
+  x86_64-linux
 
 DEPENDENCIES
   lobbying_disclosure_client!
