@@ -6,6 +6,8 @@ gemspec
 group(:development) do
   gem 'rake', require: false
   gem 'rubocop', require: false
+  gem 'rubocop-minitest', require: false
+  gem 'rubocop-rake', require: false
   gem 'rubocop-sorbet', require: false
   gem 'sorbet'
   gem 'tapioca', require: false

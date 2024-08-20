@@ -8,6 +8,7 @@ class LobbyingDisclosureClientTest < Minitest::Test
     assert_nil(LobbyingDisclosureClient.api_key)
 
     LobbyingDisclosureClient.api_key = 'Hello, world'
-    assert_equal(LobbyingDisclosureClient.api_key, 'Hello, world')
+
+    assert_equal('Hello, world', LobbyingDisclosureClient.api_key)
   end
 end

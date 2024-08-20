@@ -1,4 +1,6 @@
 require:
+  - rubocop-minitest
+  - rubocop-rake
   - rubocop-sorbet
 
 AllCops:
