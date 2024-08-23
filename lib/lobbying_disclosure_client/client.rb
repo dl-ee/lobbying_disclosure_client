@@ -22,10 +22,12 @@ module LobbyingDisclosureClient
       )
     end
     def get(path, body = {})
-      connection.get(
-        [BASE_URL, path].join,
-        body
-      ).body
+      JSON.parse(
+        connection.get(
+          [BASE_URL, path].join,
+          body
+        ).body
+      )
     end
 
     private
@@ -37,7 +39,6 @@ module LobbyingDisclosureClient
       Faraday.new(
         headers: authorization_header
       ) do |conn|
-        conn.response :json, content_type: /\bjson\z/
         conn.response :raise_error
         conn.adapter :net_http
       end

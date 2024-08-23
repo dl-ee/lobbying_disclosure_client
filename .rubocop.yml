@@ -9,12 +9,15 @@ AllCops:
 Style/Documentation:
   Enabled: false
 
+Metrics/MethodLength:
+  Enabled: false
+
 Sorbet/StrictSigil:
   Enabled: true
   Exclude:
     - 'test/**/*'
 
-Sorbet/TrueSigil:
+Sorbet/FalseSigil:
   Enabled: true
   Include:
     - 'test/**/*'
