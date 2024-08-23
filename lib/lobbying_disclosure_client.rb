@@ -3,7 +3,10 @@
 
 require 'sorbet-runtime'
 
-class LobbyingDisclosureClient
+require_relative 'lobbying_disclosure_client/client'
+require_relative 'lobbying_disclosure_client/v1'
+
+module LobbyingDisclosureClient
   class << self
     extend T::Sig
 
