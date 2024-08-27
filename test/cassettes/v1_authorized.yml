@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Token 72c153c51bc24393b0c80e0dd96cc721
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Cache-Control:
+      - private
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 27 Aug 2024 03:58:21 GMT
+      Content-Length:
+      - '1054'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=e532e2cad062dfa8368725718718c58f; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"filings":"https://lda.senate.gov/api/v1/filings/","contributions":"https://lda.senate.gov/api/v1/contributions/","registrants":"https://lda.senate.gov/api/v1/registrants/","clients":"https://lda.senate.gov/api/v1/clients/","lobbyists":"https://lda.senate.gov/api/v1/lobbyists/","constants/filing/filingtypes":"https://lda.senate.gov/api/v1/constants/filing/filingtypes/","constants/filing/lobbyingactivityissues":"https://lda.senate.gov/api/v1/constants/filing/lobbyingactivityissues/","constants/filing/governmententities":"https://lda.senate.gov/api/v1/constants/filing/governmententities/","constants/general/countries":"https://lda.senate.gov/api/v1/constants/general/countries/","constants/general/states":"https://lda.senate.gov/api/v1/constants/general/states/","constants/lobbyist/prefixes":"https://lda.senate.gov/api/v1/constants/lobbyist/prefixes/","constants/lobbyist/suffixes":"https://lda.senate.gov/api/v1/constants/lobbyist/suffixes/","constants/contribution/itemtypes":"https://lda.senate.gov/api/v1/constants/contribution/itemtypes/"}'
+  recorded_at: Tue, 27 Aug 2024 03:58:21 GMT
+recorded_with: VCR 6.3.1
