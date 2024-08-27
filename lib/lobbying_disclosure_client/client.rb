@@ -30,6 +30,23 @@ module LobbyingDisclosureClient
       )
     end
 
+    sig do
+      params(
+        path: String,
+        body: T::Hash[String, String]
+      ).returns(
+        T::Hash[String, String]
+      )
+    end
+    def post(path, body = {})
+      JSON.parse(
+        connection.post(
+          [BASE_URL, path].join,
+          body.to_json
+        ).body
+      )
+    end
+
     private
 
     sig do
@@ -37,7 +54,7 @@ module LobbyingDisclosureClient
     end
     def connection
       Faraday.new(
-        headers: authorization_header
+        headers: build_headers
       ) do |conn|
         conn.response :raise_error
         conn.adapter :net_http
@@ -47,16 +64,15 @@ module LobbyingDisclosureClient
     sig do
       returns(T::Hash[String, String])
     end
-    def authorization_header
-      if LobbyingDisclosureClient.api_key
-        {
-          'Authorization' => "Token #{LobbyingDisclosureClient.api_key}"
-        }
-      else
-        # The Lobbying Disclosure API allows unauthenticated ("anonymous") requests,
-        # though they are aggressively rate-limited.
-        {}
-      end
+    def build_headers
+      headers = { 'Content-Type' => 'application/json' }
+
+      # The Lobbying Disclosure API does allow unauthenticated ("anonymous") requests,
+      # though they are aggressively rate-limited.
+
+      headers['Authorization'] = "Token #{LobbyingDisclosureClient.api_key}" if LobbyingDisclosureClient.api_key
+
+      headers
     end
   end
 end

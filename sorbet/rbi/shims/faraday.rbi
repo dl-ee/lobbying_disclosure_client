@@ -5,5 +5,6 @@ class Faraday
 
   class Connection
     def get(*args); end
+    def post(*args); end
   end
 end
