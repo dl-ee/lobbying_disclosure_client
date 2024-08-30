@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://lda.senate.gov/api/auth/password/reset/confirm/
+    body:
+      encoding: UTF-8
+      string: '{"new_password1":"535a9a3c-48aa-45a3-a3a1-5f50a3b78e1c","new_password2":"535a9a3c-48aa-45a3-a3a1-5f50a3b78e1c","uid":"1bee6994-c785-4208-84df-6a7a7bff0130","token":"bb865a67-0bf6-452b-a644-100cc13ba7c8"}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - POST, OPTIONS
+      X-Frame-Options:
+      - DENY
+      Content-Length:
+      - '59'
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Date:
+      - Fri, 30 Aug 2024 18:39:46 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=efa7ae1a1c5a3ecc98222fe1f9954886; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"detail":"Password has been reset with the new password."}'
+  recorded_at: Fri, 30 Aug 2024 18:39:47 GMT
+recorded_with: VCR 6.3.1

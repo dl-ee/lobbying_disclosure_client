@@ -7,6 +7,8 @@ require_relative 'lobbying_disclosure_client/auth'
 require_relative 'lobbying_disclosure_client/auth/login'
 require_relative 'lobbying_disclosure_client/auth/password'
 require_relative 'lobbying_disclosure_client/auth/password/reset'
+require_relative 'lobbying_disclosure_client/auth/password/reset/confirm'
+
 require_relative 'lobbying_disclosure_client/client'
 require_relative 'lobbying_disclosure_client/v1'
 
