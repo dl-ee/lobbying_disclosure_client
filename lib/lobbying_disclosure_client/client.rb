@@ -7,41 +7,33 @@ module LobbyingDisclosureClient
   class Client
     extend T::Sig
 
-    BASE_URL = T.let(
-      'https://lda.senate.gov/api',
-      String
-    )
-    private_constant(:BASE_URL)
-
     sig do
       params(
-        path: String,
-        body: T::Hash[String, String]
+        route: LobbyingDisclosureClient::Route
       ).returns(
         T::Hash[String, String]
       )
     end
-    def get(path, body = {})
+    def get(route)
       JSON.parse(
         connection.get(
-          [BASE_URL, path].join,
-          body
+          route.to_full_api_path
         ).body
       )
     end
 
     sig do
       params(
-        path: String,
+        route: LobbyingDisclosureClient::Route,
         body: T::Hash[String, String]
       ).returns(
         T::Hash[String, String]
       )
     end
-    def post(path, body = {})
+    def post(route, body = {})
       JSON.parse(
         connection.post(
-          [BASE_URL, path].join,
+          route.to_full_api_path,
           body.to_json
         ).body
       )

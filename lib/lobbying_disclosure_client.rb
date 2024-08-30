@@ -10,6 +10,7 @@ require_relative 'lobbying_disclosure_client/auth/password/reset'
 require_relative 'lobbying_disclosure_client/auth/password/reset/confirm'
 
 require_relative 'lobbying_disclosure_client/client'
+require_relative 'lobbying_disclosure_client/route'
 require_relative 'lobbying_disclosure_client/v1'
 
 module LobbyingDisclosureClient

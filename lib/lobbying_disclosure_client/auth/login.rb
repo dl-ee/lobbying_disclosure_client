@@ -22,7 +22,7 @@ module LobbyingDisclosureClient
       end
       def self.call(input:)
         client = Client.new
-        response = client.post('/auth/login/', input.serialize)
+        response = client.post(LobbyingDisclosureClient::Route::Auth_Login, input.serialize)
 
         Output.new(
           key: T.must(response['key'])
