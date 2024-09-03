@@ -1,0 +1,78 @@
+# typed: strict
+# frozen_string_literal: true
+
+module LobbyingDisclosureClient
+  module Enums
+    class State < T::Enum
+      enums do
+        Al = new('AL')
+        Ak = new('AK')
+        Az = new('AZ')
+        Ar = new('AR')
+        Ca = new('CA')
+        Co = new('CO')
+        Ct = new('CT')
+        De = new('DE')
+        Dc = new('DC')
+        Fl = new('FL')
+        Ga = new('GA')
+        Hi = new('HI')
+        Id = new('ID')
+        Il = new('IL')
+        In = new('IN')
+        Ia = new('IA')
+        Ks = new('KS')
+        Ky = new('KY')
+        La = new('LA')
+        Me = new('ME')
+        Md = new('MD')
+        Ma = new('MA')
+        Mi = new('MI')
+        Mn = new('MN')
+        Ms = new('MS')
+        Mo = new('MO')
+        Mt = new('MT')
+        Ne = new('NE')
+        Nv = new('NV')
+        Nh = new('NH')
+        Nj = new('NJ')
+        Nm = new('NM')
+        Ny = new('NY')
+        Nc = new('NC')
+        Nd = new('ND')
+        Oh = new('OH')
+        Ok = new('OK')
+        Or = new('OR')
+        Pa = new('PA')
+        Ri = new('RI')
+        Sc = new('SC')
+        Sd = new('SD')
+        Tn = new('TN')
+        Tx = new('TX')
+        Ut = new('UT')
+        Vt = new('VT')
+        Va = new('VA')
+        Wa = new('WA')
+        Wv = new('WV')
+        Wi = new('WI')
+        Wy = new('WY')
+
+        # Canadian provinces
+
+        Ab = new('AB')
+        Bc = new('BC')
+        Mb = new('MB')
+        Nb = new('NB')
+        Nl = new('NL')
+        Nt = new('NT')
+        Ns = new('NS')
+        Nu = new('NU')
+        On = new('ON')
+        Pe = new('PE')
+        Qc = new('QC')
+        Sk = new('SK')
+        Yt = new('YT')
+      end
+    end
+  end
+end

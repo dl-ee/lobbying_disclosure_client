@@ -22,7 +22,7 @@ module LobbyingDisclosureClient
         end
         def self.call(input:)
           client = Client.new
-          response = client.post(LobbyingDisclosureClient::Route::Auth_Password_Reset, input.serialize)
+          response = client.post(LobbyingDisclosureClient::Enums::Route::Auth_Password_Reset, input.serialize)
 
           Output.new(
             detail: T.must(response['detail'])

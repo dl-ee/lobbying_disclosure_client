@@ -10,7 +10,7 @@ module LobbyingDisclosureClient
     end
     def self.call
       client = Client.new
-      client.get(LobbyingDisclosureClient::Route::V1)
+      client.get(LobbyingDisclosureClient::Enums::Route::V1)
     end
   end
 end

@@ -9,22 +9,23 @@ module LobbyingDisclosureClient
 
     sig do
       params(
-        route: LobbyingDisclosureClient::Route
+        route: LobbyingDisclosureClient::Enums::Route,
+        path_params: T::Array[String]
       ).returns(
         T::Hash[String, String]
       )
     end
-    def get(route)
+    def get(route, path_params: [])
       JSON.parse(
         connection.get(
-          route.to_full_api_path
+          route.to_full_api_path(path_params:)
         ).body
       )
     end
 
     sig do
       params(
-        route: LobbyingDisclosureClient::Route,
+        route: LobbyingDisclosureClient::Enums::Route,
         body: T::Hash[String, String]
       ).returns(
         T::Hash[String, String]

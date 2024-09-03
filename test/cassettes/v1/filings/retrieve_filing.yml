@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/filings/00b70943-0447-4a2b-8507-3b77e5d324bf/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - GET
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Cache-Control:
+      - private
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 03 Sep 2024 03:22:20 GMT
+      Content-Length:
+      - '2780'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=c6d5b1c0663287f959252e41cd96d7f2; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://lda.senate.gov/api/v1/filings/00b70943-0447-4a2b-8507-3b77e5d324bf/","filing_uuid":"00b70943-0447-4a2b-8507-3b77e5d324bf","filing_type":"RR","filing_type_display":"Registration","filing_year":2018,"filing_period":"first_quarter","filing_period_display":"1st
+        Quarter (Jan 1 - Mar 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/00b70943-0447-4a2b-8507-3b77e5d324bf/print/","filing_document_content_type":"text/html","income":null,"expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-04-09T16:25:35-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":null,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202513,"url":"https://lda.senate.gov/api/v1/clients/202513/","client_id":36,"name":"MICROSOFT
+        CORPORATION","general_description":"Software and technology.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2018-03-19"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Software,
+        technology and business solutions.","foreign_entity_issues":null,"lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House VA Committee","new":true},{"lobbyist":{"id":68012,"prefix":null,"prefix_display":null,"first_name":"STEVE","nickname":null,"middle_name":null,"last_name":"BUYER","suffix":null,"suffix_display":null},"covered_position":"Retired
+        Member of Congress","new":true}],"government_entities":[]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]}'
+  recorded_at: Tue, 03 Sep 2024 03:22:20 GMT
+recorded_with: VCR 6.3.1

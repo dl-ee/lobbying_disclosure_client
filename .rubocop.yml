@@ -12,6 +12,15 @@ Style/Documentation:
 Metrics/MethodLength:
   Enabled: false
 
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
 Sorbet/StrictSigil:
   Enabled: true
   Exclude:
