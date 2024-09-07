@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require 'bigdecimal'
+require 'bigdecimal/util'
 require 'sorbet-runtime'
 
 require_relative 'lobbying_disclosure_client/auth'

@@ -4,6 +4,8 @@
 module LobbyingDisclosureClient
   module Types
     class Registrant < T::Struct
+      extend T::Sig
+
       const :address_1, String
       const :address_2, T.nilable(String)
       const :address_3, T.nilable(String)
@@ -24,6 +26,21 @@ module LobbyingDisclosureClient
       const :state_display, String
       const :url, String
       const :zip, T.nilable(String)
+
+      sig do
+        params(
+          hash: T::Hash[String, T.untyped],
+          strict: T::Boolean
+        ).returns(T.self_type)
+      end
+      def deserialize(hash, strict = false)
+        super(
+          hash.merge(
+            'dt_updated' => hash['dt_updated'] ? DateTime.parse(hash['dt_updated']) : nil
+          ),
+          strict
+        )
+      end
     end
   end
 end

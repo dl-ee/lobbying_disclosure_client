@@ -4,6 +4,8 @@
 module LobbyingDisclosureClient
   module Types
     class Client < T::Struct
+      extend T::Sig
+
       const :client_government_entity, T.nilable(T::Boolean)
       const :client_id, String
       const :client_self_select, T.nilable(T::Boolean)
@@ -20,6 +22,21 @@ module LobbyingDisclosureClient
       const :state, LobbyingDisclosureClient::Enums::State
       const :state_display, String
       const :url, String
+
+      sig do
+        params(
+          hash: T::Hash[String, T.untyped],
+          strict: T::Boolean
+        ).returns(T.self_type)
+      end
+      def deserialize(hash, strict = false)
+        super(
+          hash.merge(
+            'effective_date' => hash['effective_date'] ? Date.parse(hash['effective_date']) : nil
+          ),
+          strict
+        )
+      end
     end
   end
 end

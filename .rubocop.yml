@@ -21,6 +21,9 @@ Metrics/BlockLength:
 Naming/VariableNumber:
   Enabled: false
 
+RuboCopStyle/OptionalBooleanParameter:
+  Enabled: false
+
 Sorbet/StrictSigil:
   Enabled: true
   Exclude:

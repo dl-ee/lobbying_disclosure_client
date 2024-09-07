@@ -12,6 +12,8 @@ module LobbyingDisclosureClient
         end
 
         class Output < T::Struct
+          extend T::Sig
+
           const :affiliated_organizations, T::Array[LobbyingDisclosureClient::Types::AffiliatedOrganization]
           const :client, LobbyingDisclosureClient::Types::Client
           const :conviction_disclosures, T::Array[LobbyingDisclosureClient::Types::ConvictionDisclosure]
@@ -42,6 +44,24 @@ module LobbyingDisclosureClient
           const :registrant_zip, T.nilable(String)
           const :termination_date, T.nilable(Date)
           const :url, String
+
+          sig do
+            params(
+              hash: T::Hash[String, T.untyped],
+              strict: T::Boolean
+            ).returns(T.self_type)
+          end
+          def deserialize(hash, strict = false)
+            super(
+              hash.merge(
+                'dt_posted' => hash['dt_posted'] ? DateTime.parse(hash['dt_posted']) : nil,
+                'expenses' => hash['expenses']&.to_d,
+                'income' => hash['income']&.to_d,
+                'termination_date' => hash['termination_date'] ? Date.parse(hash['termination_date']) : nil
+              ),
+              strict
+            )
+          end
         end
 
         sig do
