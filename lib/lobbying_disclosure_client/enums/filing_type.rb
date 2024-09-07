@@ -3,15 +3,59 @@
 
 module LobbyingDisclosureClient
   module Enums
-    # Filing type is technically an enum, whose values are not clarified
-    # by the LDA documentation. Additionally, the different values are
-    # challenging to represent as a T::Enum because they can contain
-    # or begin with numbers and/or '@' (e.g. '2@Y', '3@').
-    #
-    # For this reason, I'm choosing to defer this type's enum-ification
-    # and will happily return to it, especially if the meaning of these
-    # values comes to light.
-
-    FilingType = T.type_alias { String }
+    class FilingType < T::Enum
+      enums do
+        Registration = new('RR')
+        RegistrationAmendment = new('RA')
+        FirstQuarterReport = new('Q1')
+        FirstQuarterReportNoActivity = new('Q1Y')
+        FirstQuarterTermination = new('1T')
+        FirstQuarterTerminationNoActivity = new('1TY')
+        FirstQuarterAmendment = new('1A')
+        FirstQuarterAmendmentNoActivity = new('1AY')
+        FirstQuarterTerminationAmendment = new('1@')
+        FirstQuarterTerminationAmendmentNoActivity = new('1@Y')
+        SecondQuarterReport = new('Q2')
+        SecondQuarterReportNoActivity = new('Q2Y')
+        SecondQuarterTermination = new('2T')
+        SecondQuarterTerminationNoActivity = new('2TY')
+        SecondQuarterAmendment = new('2A')
+        SecondQuarterAmendmentNoActivity = new('2AY')
+        SecondQuarterTerminationAmendment = new('2@')
+        SecondQuarterTerminationAmendmentNoActivity = new('2@Y')
+        ThirdQuarterReport = new('Q3')
+        ThirdQuarterReportNoActivity = new('Q3Y')
+        ThirdQuarterTermination = new('3T')
+        ThirdQuarterTerminationNoActivity = new('3TY')
+        ThirdQuarterAmendment = new('3A')
+        ThirdQuarterAmendmentNoActivity = new('3AY')
+        ThirdQuarterTerminationAmendment = new('3@')
+        ThirdQuarterTerminationAmendmentNoActivity = new('3@Y')
+        FourthQuarterReport = new('Q4')
+        FourthQuarterReportNoActivity = new('Q4Y')
+        FourthQuarterTermination = new('4T')
+        FourthQuarterTerminationNoActivity = new('4TY')
+        FourthQuarterAmendment = new('4A')
+        FourthQuarterAmendmentNoActivity = new('4AY')
+        FourthQuarterTerminationAmendment = new('4@')
+        FourthQuarterTerminationAmendmentNoActivity = new('4@Y')
+        MidYearReport = new('MM')
+        MidYearReportNoActivity = new('MMY')
+        MidYearTermination = new('MT')
+        MidYearTerminationNoActivity = new('MTY')
+        MidYearAmendment = new('MA')
+        MidYearAmendmentNoActivity = new('MAY')
+        MidYearTerminationAmendment = new('M@')
+        MidYearTerminationAmendmentNoActivity = new('M@Y')
+        YearEndReport = new('YY')
+        YearEndReportNoActivity = new('YYY')
+        YearEndTermination = new('YT')
+        YearEndTerminationNoActivity = new('YTY')
+        YearEndAmendment = new('YA')
+        YearEndAmendmentNoActivity = new('YAY')
+        YearEndTerminationAmendment = new('Y@')
+        YearEndTerminationAmendmentNoActivity = new('Y@Y')
+      end
+    end
   end
 end
