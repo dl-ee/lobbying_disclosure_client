@@ -24,6 +24,9 @@ Naming/VariableNumber:
 RuboCopStyle/OptionalBooleanParameter:
   Enabled: false
 
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
 Sorbet/StrictSigil:
   Enabled: true
   Exclude:

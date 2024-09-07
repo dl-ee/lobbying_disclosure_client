@@ -8,6 +8,9 @@ module LobbyingDisclosureClient
 
       enums do
         V1 = new
+
+        V1_Constants_Filing_ListFilingTypes = new
+
         V1_Filings_ListFilings = new
         V1_Filings_RetrieveFiling = new
 
@@ -31,6 +34,8 @@ module LobbyingDisclosureClient
         path = case self
                when V1
                  '/v1/'
+               when V1_Constants_Filing_ListFilingTypes
+                 '/v1/constants/filing/filingtypes/'
                when V1_Filings_ListFilings, V1_Filings_RetrieveFiling
                  '/v1/filings/'
                when Auth_Login

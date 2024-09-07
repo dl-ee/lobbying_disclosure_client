@@ -13,7 +13,7 @@ module LobbyingDisclosureClient
         path_params: T::Array[String],
         query_params: T::Hash[String, T.untyped]
       ).returns(
-        T::Hash[String, String]
+        T.untyped
       )
     end
     def get(route, path_params: [], query_params: {})
