@@ -1,0 +1,480 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/filings/?registrant_country=US&registrant_id=401104726
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - GET
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sat, 07 Sep 2024 21:06:32 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=fe6c4726f37a1eded32c4ec6c311082e; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"count":87,"next":"https://lda.senate.gov/api/v1/filings/?page=2&registrant_country=US&registrant_id=401104726","previous":null,"results":[{"url":"https://lda.senate.gov/api/v1/filings/1fcf58ed-e319-4315-a970-a93e45e9ef4f/","filing_uuid":"1fcf58ed-e319-4315-a970-a93e45e9ef4f","filing_type":"RR","filing_type_display":"Registration","filing_year":2017,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/1fcf58ed-e319-4315-a970-a93e45e9ef4f/print/","filing_document_content_type":"text/html","income":null,"expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-01-17T13:19:38-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":null,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202510,"url":"https://lda.senate.gov/api/v1/clients/202510/","client_id":12,"name":"MEDTRONIC,
+        INC","general_description":"Medical technology, devices, solutions and services.","client_government_entity":false,"client_self_select":null,"state":"DE","state_display":"Delaware","country":"US","country_display":"United
+        States of America","ppb_state":"DE","ppb_state_display":"Delaware","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        regarding the VA Medical Surgical Prime Vendor Program and delay in purchase
+        order payments.","foreign_entity_issues":null,"lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        House COS in MEmber''s personal office and Staff Director House Veterans Affairs
+        Committee.","new":true}],"government_entities":[]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/c9aadfc2-6006-4721-bbca-b1522937b654/","filing_uuid":"c9aadfc2-6006-4721-bbca-b1522937b654","filing_type":"RR","filing_type_display":"Registration","filing_year":2017,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/c9aadfc2-6006-4721-bbca-b1522937b654/print/","filing_document_content_type":"text/html","income":null,"expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-01-17T13:26:24-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":null,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202511,"url":"https://lda.senate.gov/api/v1/clients/202511/","client_id":24,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"Developer, manufacturer and
+        marketer of medical devices.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        regarding the Medical Surgical Prime Vendor program and purchase order delays.","foreign_entity_issues":null,"lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        COS to Member''s personal office and Staff Director to House Veterans Affairs
+        Committee.","new":true}],"government_entities":[]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/4c78d7ef-3f98-459c-8ec9-ea2bd6e76d69/","filing_uuid":"4c78d7ef-3f98-459c-8ec9-ea2bd6e76d69","filing_type":"Q4","filing_type_display":"4th
+        Quarter - Report","filing_year":2017,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/4c78d7ef-3f98-459c-8ec9-ea2bd6e76d69/print/","filing_document_content_type":"text/html","income":"15000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-01-19T16:08:35.480000-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202510,"url":"https://lda.senate.gov/api/v1/clients/202510/","client_id":12,"name":"MEDTRONIC,
+        INC","general_description":"Medical technology, devices, solutions and services.","client_government_entity":false,"client_self_select":null,"state":"DE","state_display":"Delaware","country":"US","country_display":"United
+        States of America","ppb_state":"DE","ppb_state_display":"Delaware","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        pertaining to the Department of Veterans Affairs Medical Surgical Prime Vendor
+        Program reform efforts and Purchase Order delays.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Chief of Staff in Member office and Staff Director House Veterans Affairs
+        Committee","new":false}],"government_entities":[{"id":2,"name":"HOUSE OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans
+        Affairs, Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/7592a6c3-d526-41a8-843f-058242c93571/","filing_uuid":"7592a6c3-d526-41a8-843f-058242c93571","filing_type":"Q4","filing_type_display":"4th
+        Quarter - Report","filing_year":2017,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/7592a6c3-d526-41a8-843f-058242c93571/print/","filing_document_content_type":"text/html","income":"15000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-01-19T16:10:59.120000-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202511,"url":"https://lda.senate.gov/api/v1/clients/202511/","client_id":24,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"Developer, manufacturer and
+        marketer of medical devices.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        pertaining to the Department of Veterans Affairs Medical Surgical Prime Vendor
+        Program reform efforts and Purchase Order delays.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Chief of Staff in Member personal office and Staff Director House Veterans
+        Affairs Committee","new":false}],"government_entities":[{"id":2,"name":"HOUSE
+        OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans Affairs,
+        Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/6ff42eb5-8cff-4a73-9f6b-be3d49b4d610/","filing_uuid":"6ff42eb5-8cff-4a73-9f6b-be3d49b4d610","filing_type":"RA","filing_type_display":"Registration
+        - Amendment","filing_year":2017,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/6ff42eb5-8cff-4a73-9f6b-be3d49b4d610/print/","filing_document_content_type":"text/html","income":null,"expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-01-22T19:00:20-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":null,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202510,"url":"https://lda.senate.gov/api/v1/clients/202510/","client_id":12,"name":"MEDTRONIC,
+        INC","general_description":"Medical technology, devices, solutions and services.","client_government_entity":false,"client_self_select":null,"state":"DE","state_display":"Delaware","country":"US","country_display":"United
+        States of America","ppb_state":"DE","ppb_state_display":"Delaware","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        regarding the VA Medical Surgical Prime Vendor Program and delay in purchase
+        order payments.","foreign_entity_issues":null,"lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        COS to Member''s personal Office and Staff Director House Veterans Affairs
+        Committee.","new":true}],"government_entities":[]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/7b0bee34-a3bc-49dc-8530-b71f17024c43/","filing_uuid":"7b0bee34-a3bc-49dc-8530-b71f17024c43","filing_type":"4A","filing_type_display":"4th
+        Quarter - Amendment","filing_year":2017,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/7b0bee34-a3bc-49dc-8530-b71f17024c43/print/","filing_document_content_type":"text/html","income":"15000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-01-23T13:04:07.360000-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202510,"url":"https://lda.senate.gov/api/v1/clients/202510/","client_id":12,"name":"MEDTRONIC,
+        INC","general_description":"Medical technology, devices, solutions and services.","client_government_entity":false,"client_self_select":null,"state":"DE","state_display":"Delaware","country":"US","country_display":"United
+        States of America","ppb_state":"DE","ppb_state_display":"Delaware","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        pertaining to the Department of Veterans Affairs Medical Surgical Prime Vendor
+        Program reform efforts and Purchase Order delays.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Chief of Staff in Member office and Staff Director House Veterans Affairs
+        Committee","new":false}],"government_entities":[{"id":2,"name":"HOUSE OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans
+        Affairs, Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/00b70943-0447-4a2b-8507-3b77e5d324bf/","filing_uuid":"00b70943-0447-4a2b-8507-3b77e5d324bf","filing_type":"RR","filing_type_display":"Registration","filing_year":2018,"filing_period":"first_quarter","filing_period_display":"1st
+        Quarter (Jan 1 - Mar 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/00b70943-0447-4a2b-8507-3b77e5d324bf/print/","filing_document_content_type":"text/html","income":null,"expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-04-09T16:25:35-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":null,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202513,"url":"https://lda.senate.gov/api/v1/clients/202513/","client_id":36,"name":"MICROSOFT
+        CORPORATION","general_description":"Software and technology.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2018-03-19"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Software,
+        technology and business solutions.","foreign_entity_issues":null,"lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House VA Committee","new":true},{"lobbyist":{"id":68012,"prefix":null,"prefix_display":null,"first_name":"STEVE","nickname":null,"middle_name":null,"last_name":"BUYER","suffix":null,"suffix_display":null},"covered_position":"Retired
+        Member of Congress","new":true}],"government_entities":[]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/0854cd79-8f4f-456b-9b5c-83fe0abdaef2/","filing_uuid":"0854cd79-8f4f-456b-9b5c-83fe0abdaef2","filing_type":"Q1","filing_type_display":"1st
+        Quarter - Report","filing_year":2018,"filing_period":"first_quarter","filing_period_display":"1st
+        Quarter (Jan 1 - Mar 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/0854cd79-8f4f-456b-9b5c-83fe0abdaef2/print/","filing_document_content_type":"text/html","income":"15000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-04-17T12:09:11.843000-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202510,"url":"https://lda.senate.gov/api/v1/clients/202510/","client_id":12,"name":"MEDTRONIC,
+        INC","general_description":"Medical technology, devices, solutions and services.","client_government_entity":false,"client_self_select":null,"state":"DE","state_display":"Delaware","country":"US","country_display":"United
+        States of America","ppb_state":"DE","ppb_state_display":"Delaware","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        pertaining to the Department of Veterans Affairs Medical Surgical Prime Vendor
+        Program reform efforts and Purchase Order delays.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Chief of Staff in Member office and Staff Director House Veterans Affairs
+        Committee","new":false}],"government_entities":[{"id":2,"name":"HOUSE OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans
+        Affairs, Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/479c4b5b-f4f4-4f57-8caa-202a07dfc1d7/","filing_uuid":"479c4b5b-f4f4-4f57-8caa-202a07dfc1d7","filing_type":"Q1","filing_type_display":"1st
+        Quarter - Report","filing_year":2018,"filing_period":"first_quarter","filing_period_display":"1st
+        Quarter (Jan 1 - Mar 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/479c4b5b-f4f4-4f57-8caa-202a07dfc1d7/print/","filing_document_content_type":"text/html","income":"15000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-04-17T12:09:16.827000-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202511,"url":"https://lda.senate.gov/api/v1/clients/202511/","client_id":24,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"Developer, manufacturer and
+        marketer of medical devices.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        pertaining to the Department of Veterans Affairs Medical Surgical Prime Vendor
+        Program reform efforts and Purchase Order delays.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Chief of Staff in Member personal office and Staff Director House Veterans
+        Affairs Committee","new":false}],"government_entities":[{"id":2,"name":"HOUSE
+        OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans Affairs,
+        Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/e716911e-dffb-4879-b785-033d68566231/","filing_uuid":"e716911e-dffb-4879-b785-033d68566231","filing_type":"Q1","filing_type_display":"1st
+        Quarter - Report","filing_year":2018,"filing_period":"first_quarter","filing_period_display":"1st
+        Quarter (Jan 1 - Mar 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/e716911e-dffb-4879-b785-033d68566231/print/","filing_document_content_type":"text/html","income":"20000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-04-17T12:15:40.363000-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202513,"url":"https://lda.senate.gov/api/v1/clients/202513/","client_id":36,"name":"MICROSOFT
+        CORPORATION","general_description":"Software and technology.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2018-03-19"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        related to business process, information technology and software.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House Veterans Affairs Committee. Member office COS.","new":false},{"lobbyist":{"id":68012,"prefix":null,"prefix_display":null,"first_name":"STEVE","nickname":null,"middle_name":null,"last_name":"BUYER","suffix":null,"suffix_display":null},"covered_position":"Retired
+        Member of Congress.","new":false}],"government_entities":[{"id":2,"name":"HOUSE
+        OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans Affairs,
+        Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/856710c6-db3a-4968-8877-cda9ae790dcc/","filing_uuid":"856710c6-db3a-4968-8877-cda9ae790dcc","filing_type":"Q2","filing_type_display":"2nd
+        Quarter - Report","filing_year":2018,"filing_period":"second_quarter","filing_period_display":"2nd
+        Quarter (Apr 1 - June 30)","filing_document_url":"https://lda.senate.gov/filings/public/filing/856710c6-db3a-4968-8877-cda9ae790dcc/print/","filing_document_content_type":"text/html","income":"15000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-07-17T08:59:38.853000-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202510,"url":"https://lda.senate.gov/api/v1/clients/202510/","client_id":12,"name":"MEDTRONIC,
+        INC","general_description":"Medical technology, devices, solutions and services.","client_government_entity":false,"client_self_select":null,"state":"DE","state_display":"Delaware","country":"US","country_display":"United
+        States of America","ppb_state":"DE","ppb_state_display":"Delaware","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        pertaining to the Department of Veterans Affairs Medical Surgical Prime Vendor
+        Program reform efforts and Purchase Order delays.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Chief of Staff in Member office and Staff Director House Veterans Affairs
+        Committee","new":false}],"government_entities":[{"id":2,"name":"HOUSE OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans
+        Affairs, Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/769e27c6-626b-442d-8d28-9832c2c3a56b/","filing_uuid":"769e27c6-626b-442d-8d28-9832c2c3a56b","filing_type":"Q2","filing_type_display":"2nd
+        Quarter - Report","filing_year":2018,"filing_period":"second_quarter","filing_period_display":"2nd
+        Quarter (Apr 1 - June 30)","filing_document_url":"https://lda.senate.gov/filings/public/filing/769e27c6-626b-442d-8d28-9832c2c3a56b/print/","filing_document_content_type":"text/html","income":"15000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-07-17T09:00:41.023000-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202511,"url":"https://lda.senate.gov/api/v1/clients/202511/","client_id":24,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"Developer, manufacturer and
+        marketer of medical devices.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        pertaining to the Department of Veterans Affairs Medical Surgical Prime Vendor
+        Program reform efforts and Purchase Order delays.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Chief of Staff in Member personal office and Staff Director House Veterans
+        Affairs Committee","new":false}],"government_entities":[{"id":2,"name":"HOUSE
+        OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans Affairs,
+        Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/017becd5-09bb-43fd-ba4f-d4894e96d9d0/","filing_uuid":"017becd5-09bb-43fd-ba4f-d4894e96d9d0","filing_type":"Q2","filing_type_display":"2nd
+        Quarter - Report","filing_year":2018,"filing_period":"second_quarter","filing_period_display":"2nd
+        Quarter (Apr 1 - June 30)","filing_document_url":"https://lda.senate.gov/filings/public/filing/017becd5-09bb-43fd-ba4f-d4894e96d9d0/print/","filing_document_content_type":"text/html","income":"20000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-07-17T09:01:42.150000-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202513,"url":"https://lda.senate.gov/api/v1/clients/202513/","client_id":36,"name":"MICROSOFT
+        CORPORATION","general_description":"Software and technology.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2018-03-19"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        related to business process, information technology and software.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House Veterans Affairs Committee. Member office COS.","new":false},{"lobbyist":{"id":68012,"prefix":null,"prefix_display":null,"first_name":"STEVE","nickname":null,"middle_name":null,"last_name":"BUYER","suffix":null,"suffix_display":null},"covered_position":"Retired
+        Member of Congress.","new":false}],"government_entities":[{"id":2,"name":"HOUSE
+        OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans Affairs,
+        Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/1276d172-c019-4031-8869-ac31b74b9cb1/","filing_uuid":"1276d172-c019-4031-8869-ac31b74b9cb1","filing_type":"Q3","filing_type_display":"3rd
+        Quarter - Report","filing_year":2018,"filing_period":"third_quarter","filing_period_display":"3rd
+        Quarter (July 1 - Sep 30)","filing_document_url":"https://lda.senate.gov/filings/public/filing/1276d172-c019-4031-8869-ac31b74b9cb1/print/","filing_document_content_type":"text/html","income":"15000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-10-18T11:17:48.663000-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202510,"url":"https://lda.senate.gov/api/v1/clients/202510/","client_id":12,"name":"MEDTRONIC,
+        INC","general_description":"Medical technology, devices, solutions and services.","client_government_entity":false,"client_self_select":null,"state":"DE","state_display":"Delaware","country":"US","country_display":"United
+        States of America","ppb_state":"DE","ppb_state_display":"Delaware","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        pertaining to the Department of Veterans Affairs Medical Surgical Prime Vendor
+        Program reform efforts and Purchase Order delays.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Chief of Staff in Member office and Staff Director House Veterans Affairs
+        Committee","new":false}],"government_entities":[{"id":2,"name":"HOUSE OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans
+        Affairs, Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/cec06600-32c8-4843-9aae-4921c0d399fd/","filing_uuid":"cec06600-32c8-4843-9aae-4921c0d399fd","filing_type":"Q3","filing_type_display":"3rd
+        Quarter - Report","filing_year":2018,"filing_period":"third_quarter","filing_period_display":"3rd
+        Quarter (July 1 - Sep 30)","filing_document_url":"https://lda.senate.gov/filings/public/filing/cec06600-32c8-4843-9aae-4921c0d399fd/print/","filing_document_content_type":"text/html","income":"15000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-10-18T11:18:49.350000-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202511,"url":"https://lda.senate.gov/api/v1/clients/202511/","client_id":24,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"Developer, manufacturer and
+        marketer of medical devices.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        pertaining to the Department of Veterans Affairs Medical Surgical Prime Vendor
+        Program reform efforts and Purchase Order delays.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Chief of Staff in Member personal office and Staff Director House Veterans
+        Affairs Committee","new":false}],"government_entities":[{"id":2,"name":"HOUSE
+        OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans Affairs,
+        Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/502479f5-dbf9-4784-8392-91ea92e45328/","filing_uuid":"502479f5-dbf9-4784-8392-91ea92e45328","filing_type":"Q3","filing_type_display":"3rd
+        Quarter - Report","filing_year":2018,"filing_period":"third_quarter","filing_period_display":"3rd
+        Quarter (July 1 - Sep 30)","filing_document_url":"https://lda.senate.gov/filings/public/filing/502479f5-dbf9-4784-8392-91ea92e45328/print/","filing_document_content_type":"text/html","income":"20000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-10-18T11:19:54.367000-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202513,"url":"https://lda.senate.gov/api/v1/clients/202513/","client_id":36,"name":"MICROSOFT
+        CORPORATION","general_description":"Software and technology.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2018-03-19"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        related to business process, information technology and software.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House Veterans Affairs Committee. Member office COS.","new":false},{"lobbyist":{"id":68012,"prefix":null,"prefix_display":null,"first_name":"STEVE","nickname":null,"middle_name":null,"last_name":"BUYER","suffix":null,"suffix_display":null},"covered_position":"Retired
+        Member of Congress.","new":false}],"government_entities":[{"id":2,"name":"HOUSE
+        OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans Affairs,
+        Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/23ec04b5-e19f-40b8-88e2-82142c4dbda5/","filing_uuid":"23ec04b5-e19f-40b8-88e2-82142c4dbda5","filing_type":"RR","filing_type_display":"Registration","filing_year":2018,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/23ec04b5-e19f-40b8-88e2-82142c4dbda5/print/","filing_document_content_type":"text/html","income":null,"expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2018-10-31T13:36:57-04:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":null,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202512,"url":"https://lda.senate.gov/api/v1/clients/202512/","client_id":48,"name":"GILEAD
+        SCIENCES","general_description":"Research based biopharmaceutical company
+        that discovers and commercializes medicines.","client_government_entity":false,"client_self_select":null,"state":"CA","state_display":"California","country":"US","country_display":"United
+        States of America","ppb_state":"CA","ppb_state_display":"California","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2018-10-01"},"lobbying_activities":[{"general_issue_code":"IND","general_issue_code_display":"Indian/Native
+        American Affairs","description":"Education specific to HCV, HIV and related
+        issues.","foreign_entity_issues":null,"lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House VA Committee and COS to MOC","new":true}],"government_entities":[]},{"general_issue_code":"DEF","general_issue_code_display":"Defense","description":"Education
+        specific to HCV, HIV and related issues.","foreign_entity_issues":null,"lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House VA Committee and COS to MOC","new":true}],"government_entities":[]},{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        specific to HCV, HIV and related issues.","foreign_entity_issues":null,"lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House VA Committee and COS to MOC","new":true}],"government_entities":[]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/d7a06822-1f2e-4bfc-96b1-d8d14a0fa4bf/","filing_uuid":"d7a06822-1f2e-4bfc-96b1-d8d14a0fa4bf","filing_type":"Q4","filing_type_display":"4th
+        Quarter - Report","filing_year":2018,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/d7a06822-1f2e-4bfc-96b1-d8d14a0fa4bf/print/","filing_document_content_type":"text/html","income":"15000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2019-01-11T09:27:33.753000-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202511,"url":"https://lda.senate.gov/api/v1/clients/202511/","client_id":24,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"Developer, manufacturer and
+        marketer of medical devices.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        pertaining to the Department of Veterans Affairs Medical Surgical Prime Vendor
+        Program reform efforts and Purchase Order delays.  S2248.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Chief of Staff in Member personal office and Staff Director House Veterans
+        Affairs Committee","new":false}],"government_entities":[{"id":2,"name":"HOUSE
+        OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans Affairs,
+        Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/657be8fd-cd6a-4519-9b63-b1d2f4dd29fa/","filing_uuid":"657be8fd-cd6a-4519-9b63-b1d2f4dd29fa","filing_type":"Q4","filing_type_display":"4th
+        Quarter - Report","filing_year":2018,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/657be8fd-cd6a-4519-9b63-b1d2f4dd29fa/print/","filing_document_content_type":"text/html","income":"60000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2019-01-11T09:29:34.757000-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202513,"url":"https://lda.senate.gov/api/v1/clients/202513/","client_id":36,"name":"MICROSOFT
+        CORPORATION","general_description":"Software and technology.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2018-03-19"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        related to business process, information technology and software.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House Veterans Affairs Committee. Member office COS.","new":false},{"lobbyist":{"id":68012,"prefix":null,"prefix_display":null,"first_name":"STEVE","nickname":null,"middle_name":null,"last_name":"BUYER","suffix":null,"suffix_display":null},"covered_position":"Retired
+        Member of Congress.","new":false}],"government_entities":[{"id":2,"name":"HOUSE
+        OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans Affairs,
+        Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/25f37ccd-3952-4415-85ac-36299face272/","filing_uuid":"25f37ccd-3952-4415-85ac-36299face272","filing_type":"Q4","filing_type_display":"4th
+        Quarter - Report","filing_year":2018,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/25f37ccd-3952-4415-85ac-36299face272/print/","filing_document_content_type":"text/html","income":"15000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2019-01-11T09:47:43.100000-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202510,"url":"https://lda.senate.gov/api/v1/clients/202510/","client_id":12,"name":"MEDTRONIC,
+        INC","general_description":"Medical technology, devices, solutions and services.","client_government_entity":false,"client_self_select":null,"state":"DE","state_display":"Delaware","country":"US","country_display":"United
+        States of America","ppb_state":"DE","ppb_state_display":"Delaware","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2017-12-06"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        pertaining to the Department of Veterans Affairs Medical Surgical Prime Vendor
+        Program reform efforts and Purchase Order delays-- S2248.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Chief of Staff in Member office and Staff Director House Veterans Affairs
+        Committee","new":false}],"government_entities":[{"id":2,"name":"HOUSE OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans
+        Affairs, Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/ee0d32a5-97bc-4921-85ee-1e68d7cf9c67/","filing_uuid":"ee0d32a5-97bc-4921-85ee-1e68d7cf9c67","filing_type":"4A","filing_type_display":"4th
+        Quarter - Amendment","filing_year":2018,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/ee0d32a5-97bc-4921-85ee-1e68d7cf9c67/print/","filing_document_content_type":"text/html","income":"30000.00","expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2019-01-11T12:14:01.603000-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202512,"url":"https://lda.senate.gov/api/v1/clients/202512/","client_id":48,"name":"GILEAD
+        SCIENCES","general_description":"Research based biopharmaceutical company
+        that discovers and commercializes medicines.","client_government_entity":false,"client_self_select":null,"state":"CA","state_display":"California","country":"US","country_display":"United
+        States of America","ppb_state":"CA","ppb_state_display":"California","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2018-10-01"},"lobbying_activities":[{"general_issue_code":"DEF","general_issue_code_display":"Defense","description":"HIV
+        prevention and PrEP.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House VA Committee/COS to member''s personal office.","new":false}],"government_entities":[{"id":25,"name":"Defense,
+        Dept of (DOD)"},{"id":2,"name":"HOUSE OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans
+        Affairs, Dept of (VA)"}]},{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        related to HCV and HIV.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House VA Committee and Chief of Staff in Member''s personal
+        office","new":false}],"government_entities":[{"id":25,"name":"Defense, Dept
+        of (DOD)"},{"id":2,"name":"HOUSE OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans
+        Affairs, Dept of (VA)"}]},{"general_issue_code":"IND","general_issue_code_display":"Indian/Native
+        American Affairs","description":"Education related to HCV and HIV.","foreign_entity_issues":"","lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House VA Committee. COS personal office of member","new":false}],"government_entities":[{"id":25,"name":"Defense,
+        Dept of (DOD)"},{"id":2,"name":"HOUSE OF REPRESENTATIVES"},{"id":1,"name":"SENATE"},{"id":42,"name":"Veterans
+        Affairs, Dept of (VA)"}]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/eea9dc40-eb2c-45f3-a3f9-1d6fb145c82a/","filing_uuid":"eea9dc40-eb2c-45f3-a3f9-1d6fb145c82a","filing_type":"4AY","filing_type_display":"4th
+        Quarter - Amendment (No Activity)","filing_year":2018,"filing_period":"fourth_quarter","filing_period_display":"4th
+        Quarter (Oct 1 - Dec 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/eea9dc40-eb2c-45f3-a3f9-1d6fb145c82a/print/","filing_document_content_type":"text/html","income":null,"expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2019-01-25T12:16:32.473000-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":false,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202510,"url":"https://lda.senate.gov/api/v1/clients/202510/","client_id":12,"name":"MEDTRONIC,
+        INC","general_description":"Medical technology, devices, solutions and services.","client_government_entity":false,"client_self_select":null,"state":"DE","state_display":"Delaware","country":"US","country_display":"United
+        States of America","ppb_state":"DE","ppb_state_display":"Delaware","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2017-12-06"},"lobbying_activities":[],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/ebff976e-8d70-4453-b73f-b7d2431b36ae/","filing_uuid":"ebff976e-8d70-4453-b73f-b7d2431b36ae","filing_type":"RR","filing_type_display":"Registration","filing_year":2019,"filing_period":"first_quarter","filing_period_display":"1st
+        Quarter (Jan 1 - Mar 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/ebff976e-8d70-4453-b73f-b7d2431b36ae/print/","filing_document_content_type":"text/html","income":null,"expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2019-01-25T12:34:52-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":null,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202514,"url":"https://lda.senate.gov/api/v1/clients/202514/","client_id":51,"name":"RAI
+        SERVICES COMPANY","general_description":"Tobacco, snuff and vapor and related
+        products","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"NC","ppb_state_display":"North
+        Carolina","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2019-01-01"},"lobbying_activities":[{"general_issue_code":"HCR","general_issue_code_display":"Health
+        Issues","description":"Education related to FDA reform, deeming regulation
+        and harm reduction.","foreign_entity_issues":null,"lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House VA Committee and COS to member personal office","new":true}],"government_entities":[]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/a2ce8dcd-e111-45bc-97ae-5d94c5c29977/","filing_uuid":"a2ce8dcd-e111-45bc-97ae-5d94c5c29977","filing_type":"RR","filing_type_display":"Registration","filing_year":2019,"filing_period":"first_quarter","filing_period_display":"1st
+        Quarter (Jan 1 - Mar 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/a2ce8dcd-e111-45bc-97ae-5d94c5c29977/print/","filing_document_content_type":"text/html","income":null,"expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2019-01-25T12:42:03-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":null,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202516,"url":"https://lda.senate.gov/api/v1/clients/202516/","client_id":63,"name":"JOHNSON
+        & JOHNSON SERVICES, INC.","general_description":"Medical products, devices,
+        personal products and pharmaceuticals.","client_government_entity":false,"client_self_select":null,"state":"NJ","state_display":"New
+        Jersey","country":"US","country_display":"United States of America","ppb_state":"NJ","ppb_state_display":"New
+        Jersey","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2019-01-01"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Department
+        of Veterans Affairs medical surgical reform efforts.","foreign_entity_issues":null,"lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        Staff Director House VA Committee and COS to personal office","new":true}],"government_entities":[]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]},{"url":"https://lda.senate.gov/api/v1/filings/4e24ccb2-eb20-4cd2-b51c-3d56102e5bc8/","filing_uuid":"4e24ccb2-eb20-4cd2-b51c-3d56102e5bc8","filing_type":"RR","filing_type_display":"Registration","filing_year":2019,"filing_period":"first_quarter","filing_period_display":"1st
+        Quarter (Jan 1 - Mar 31)","filing_document_url":"https://lda.senate.gov/filings/public/filing/4e24ccb2-eb20-4cd2-b51c-3d56102e5bc8/print/","filing_document_content_type":"text/html","income":null,"expenses":null,"expenses_method":null,"expenses_method_display":null,"posted_by_name":"Mike
+        Copher","dt_posted":"2019-02-05T14:31:09-05:00","termination_date":null,"registrant_country":"United
+        States of America","registrant_ppb_country":null,"registrant_address_1":"3600
+        South Glebe Road #324","registrant_address_2":null,"registrant_different_address":null,"registrant_city":"Arlington","registrant_state":"VA","registrant_zip":"22202","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"},"client":{"id":202515,"url":"https://lda.senate.gov/api/v1/clients/202515/","client_id":75,"name":"TRIWEST
+        HEALTHCARE ALLIANCE","general_description":"Administers community health care
+        programs for the Department of Veterans Affairs","client_government_entity":false,"client_self_select":null,"state":"AZ","state_display":"Arizona","country":"US","country_display":"United
+        States of America","ppb_state":"AZ","ppb_state_display":"Arizona","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2019-01-01"},"lobbying_activities":[{"general_issue_code":"VET","general_issue_code_display":"Veterans","description":"Education
+        for community care programs and implementation of Mission Act","foreign_entity_issues":null,"lobbyists":[{"lobbyist":{"id":67387,"prefix":null,"prefix_display":null,"first_name":"MIKE","nickname":null,"middle_name":null,"last_name":"COPHER","suffix":null,"suffix_display":null},"covered_position":"Former
+        staff director House VA committee and chief of staff members personal office","new":true}],"government_entities":[]}],"conviction_disclosures":[],"foreign_entities":[],"affiliated_organizations":[]}]}'
+  recorded_at: Sat, 07 Sep 2024 21:06:38 GMT
+recorded_with: VCR 6.3.1

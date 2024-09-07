@@ -34,10 +34,12 @@ require_relative 'lobbying_disclosure_client/types/client'
 require_relative 'lobbying_disclosure_client/types/conviction_disclosure'
 require_relative 'lobbying_disclosure_client/types/foreign_entity'
 require_relative 'lobbying_disclosure_client/types/registrant'
+require_relative 'lobbying_disclosure_client/types/filing'
 
 require_relative 'lobbying_disclosure_client/v1'
 
 require_relative 'lobbying_disclosure_client/v1/filings'
+require_relative 'lobbying_disclosure_client/v1/filings/list_filings'
 require_relative 'lobbying_disclosure_client/v1/filings/retrieve_filing'
 
 module LobbyingDisclosureClient
