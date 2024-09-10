@@ -44,6 +44,8 @@ require_relative 'lobbying_disclosure_client/v1/constants/filing'
 require_relative 'lobbying_disclosure_client/v1/constants/filing/list_filing_types'
 require_relative 'lobbying_disclosure_client/v1/constants/filing/list_lobbying_activity_general_issues'
 require_relative 'lobbying_disclosure_client/v1/constants/filing/list_government_entities'
+require_relative 'lobbying_disclosure_client/v1/constants/general'
+require_relative 'lobbying_disclosure_client/v1/constants/general/list_countries'
 
 require_relative 'lobbying_disclosure_client/v1/filings'
 require_relative 'lobbying_disclosure_client/v1/filings/list_filings'
