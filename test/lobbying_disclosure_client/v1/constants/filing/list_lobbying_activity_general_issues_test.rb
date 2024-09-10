@@ -3,8 +3,8 @@
 
 require 'test_helper'
 
-class ListFilingTypesTest < Minitest::Test
-  def test_list_filings
+class ListLobbyingActivityGeneralIssuesTest < Minitest::Test
+  def test_list_lobbying_activity_general_issues
     VCR.use_cassette('/v1/constants/filing/list_lobbying_activity_general_issues') do
       output = LobbyingDisclosureClient::V1::Constants::Filing::ListLobbyingActivityGeneralIssues.call
 
