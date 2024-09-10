@@ -10,6 +10,7 @@ module LobbyingDisclosureClient
         V1 = new
 
         V1_Constants_Filing_ListFilingTypes = new
+        V1_Constants_Filing_LobbyingActivityIssues = new
 
         V1_Filings_ListFilings = new
         V1_Filings_RetrieveFiling = new
@@ -36,6 +37,8 @@ module LobbyingDisclosureClient
                  '/v1/'
                when V1_Constants_Filing_ListFilingTypes
                  '/v1/constants/filing/filingtypes/'
+               when V1_Constants_Filing_LobbyingActivityIssues
+                 '/v1/constants/filing/lobbyingactivityissues/'
                when V1_Filings_ListFilings, V1_Filings_RetrieveFiling
                  '/v1/filings/'
                when Auth_Login
