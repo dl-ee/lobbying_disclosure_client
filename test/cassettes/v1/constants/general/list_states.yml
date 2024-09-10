@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/constants/general/states/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 10 Sep 2024 20:43:40 GMT
+      Content-Length:
+      - '2045'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=fe6c4726f37a1eded32c4ec6c311082e; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '[{"value":"AL","name":"Alabama"},{"value":"AK","name":"Alaska"},{"value":"AS","name":"American
+        Samoa"},{"value":"AZ","name":"Arizona"},{"value":"AR","name":"Arkansas"},{"value":"AA","name":"Armed
+        Forces Americas"},{"value":"AE","name":"Armed Forces Europe"},{"value":"AP","name":"Armed
+        Forces Pacific"},{"value":"CA","name":"California"},{"value":"CO","name":"Colorado"},{"value":"CT","name":"Connecticut"},{"value":"DE","name":"Delaware"},{"value":"DC","name":"District
+        of Columbia"},{"value":"FL","name":"Florida"},{"value":"GA","name":"Georgia"},{"value":"GU","name":"Guam"},{"value":"HI","name":"Hawaii"},{"value":"ID","name":"Idaho"},{"value":"IL","name":"Illinois"},{"value":"IN","name":"Indiana"},{"value":"IA","name":"Iowa"},{"value":"KS","name":"Kansas"},{"value":"KY","name":"Kentucky"},{"value":"LA","name":"Louisiana"},{"value":"ME","name":"Maine"},{"value":"MD","name":"Maryland"},{"value":"MA","name":"Massachusetts"},{"value":"MI","name":"Michigan"},{"value":"MN","name":"Minnesota"},{"value":"MS","name":"Mississippi"},{"value":"MO","name":"Missouri"},{"value":"MT","name":"Montana"},{"value":"NE","name":"Nebraska"},{"value":"NV","name":"Nevada"},{"value":"NH","name":"New
+        Hampshire"},{"value":"NJ","name":"New Jersey"},{"value":"NM","name":"New Mexico"},{"value":"NY","name":"New
+        York"},{"value":"NC","name":"North Carolina"},{"value":"ND","name":"North
+        Dakota"},{"value":"MP","name":"Northern Mariana Islands"},{"value":"OH","name":"Ohio"},{"value":"OK","name":"Oklahoma"},{"value":"OR","name":"Oregon"},{"value":"PA","name":"Pennsylvania"},{"value":"PR","name":"Puerto
+        Rico"},{"value":"RI","name":"Rhode Island"},{"value":"SC","name":"South Carolina"},{"value":"SD","name":"South
+        Dakota"},{"value":"TN","name":"Tennessee"},{"value":"TX","name":"Texas"},{"value":"UT","name":"Utah"},{"value":"VT","name":"Vermont"},{"value":"VI","name":"Virgin
+        Islands"},{"value":"VA","name":"Virginia"},{"value":"WA","name":"Washington"},{"value":"WV","name":"West
+        Virginia"},{"value":"WI","name":"Wisconsin"},{"value":"WY","name":"Wyoming"}]'
+  recorded_at: Tue, 10 Sep 2024 20:43:40 GMT
+recorded_with: VCR 6.3.1
