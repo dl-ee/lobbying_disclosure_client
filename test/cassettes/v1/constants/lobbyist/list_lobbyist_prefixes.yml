@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/constants/lobbyist/prefixes/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 10 Sep 2024 20:52:21 GMT
+      Content-Length:
+      - '203'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=a3d1d4a764d82530f1f6b067325a5ebb; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '[{"value":"dr","name":"DR."},{"value":"mr","name":"MR."},{"value":"mrs","name":"MRS."},{"value":"ms","name":"MS."},{"value":"mx","name":"MX."},{"value":"ptr","name":"PTR."},{"value":"rev","name":"REV."}]'
+  recorded_at: Tue, 10 Sep 2024 20:52:21 GMT
+recorded_with: VCR 6.3.1
