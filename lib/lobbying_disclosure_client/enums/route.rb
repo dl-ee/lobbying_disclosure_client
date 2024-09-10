@@ -17,6 +17,7 @@ module LobbyingDisclosureClient
         V1_Constants_General_States = new
 
         V1_Constants_Lobbyist_Prefixes = new
+        V1_Constants_Lobbyist_Suffixes = new
 
         V1_Filings_ListFilings = new
         V1_Filings_RetrieveFiling = new
@@ -53,6 +54,8 @@ module LobbyingDisclosureClient
                  '/v1/constants/general/states/'
                when V1_Constants_Lobbyist_Prefixes
                  '/v1/constants/lobbyist/prefixes/'
+               when V1_Constants_Lobbyist_Suffixes
+                 '/v1/constants/lobbyist/suffixes/'
                when V1_Filings_ListFilings, V1_Filings_RetrieveFiling
                  '/v1/filings/'
                when Auth_Login

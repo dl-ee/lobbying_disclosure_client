@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/constants/lobbyist/suffixes/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - GET, HEAD, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 10 Sep 2024 20:57:20 GMT
+      Content-Length:
+      - '644'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=e055710d14581949ca0c4fa4f1262ee4; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '[{"value":"jr","name":"JR"},{"value":"sr","name":"SR"},{"value":"i","name":"I"},{"value":"ii","name":"II"},{"value":"iii","name":"III"},{"value":"iv","name":"IV"},{"value":"v","name":"V"},{"value":"cae","name":"CAE"},{"value":"dvm","name":"DVM"},{"value":"dmd","name":"DMD"},{"value":"dppd","name":"DPPD"},{"value":"edd","name":"EDD"},{"value":"esq","name":"ESQ"},{"value":"jd","name":"JD"},{"value":"md","name":"MD"},{"value":"ma","name":"MA"},{"value":"med","name":"MED"},{"value":"mhsa","name":"MHSA"},{"value":"mph","name":"MPH"},{"value":"od","name":"OD"},{"value":"pa","name":"PA"},{"value":"pe","name":"PE"},{"value":"phd","name":"PHD"}]'
+  recorded_at: Tue, 10 Sep 2024 20:57:20 GMT
+recorded_with: VCR 6.3.1

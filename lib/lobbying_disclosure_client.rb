@@ -52,6 +52,7 @@ require_relative 'lobbying_disclosure_client/v1/constants/general/list_states'
 
 require_relative 'lobbying_disclosure_client/v1/constants/lobbyist'
 require_relative 'lobbying_disclosure_client/v1/constants/lobbyist/list_lobbyist_prefixes'
+require_relative 'lobbying_disclosure_client/v1/constants/lobbyist/list_lobbyist_suffixes'
 
 require_relative 'lobbying_disclosure_client/v1/filings'
 require_relative 'lobbying_disclosure_client/v1/filings/list_filings'
