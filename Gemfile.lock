@@ -28,6 +28,7 @@ GEM
     language_server-protocol (3.17.0.3)
     logger (1.6.0)
     minitest (5.20.0)
+    minitest-stub-const (0.6)
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
@@ -112,6 +113,7 @@ PLATFORMS
 DEPENDENCIES
   lobbying_disclosure_client!
   minitest
+  minitest-stub-const
   mutex_m
   rake
   rubocop

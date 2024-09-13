@@ -3,6 +3,7 @@
 
 require 'bundler/setup'
 require 'minitest/autorun'
+require 'minitest/stub_const'
 require 'vcr'
 require 'webmock/minitest'
 

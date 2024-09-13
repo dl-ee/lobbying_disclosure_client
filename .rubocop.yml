@@ -27,6 +27,12 @@ RuboCopStyle/OptionalBooleanParameter:
 Metrics/CyclomaticComplexity:
   Enabled: false
 
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
 Sorbet/StrictSigil:
   Enabled: true
   Exclude:

@@ -15,6 +15,7 @@ end
 
 group(:test) do
   gem 'minitest', require: false
+  gem 'minitest-stub-const', require: false
   gem 'mutex_m', require: false
   gem 'vcr', require: false
   gem 'webmock', require: false
