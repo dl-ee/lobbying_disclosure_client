@@ -61,6 +61,9 @@ require_relative 'lobbying_disclosure_client/v1/constants/lobbyist'
 require_relative 'lobbying_disclosure_client/v1/constants/lobbyist/list_lobbyist_prefixes'
 require_relative 'lobbying_disclosure_client/v1/constants/lobbyist/list_lobbyist_suffixes'
 
+require_relative 'lobbying_disclosure_client/v1/contribution_reports'
+require_relative 'lobbying_disclosure_client/v1/contribution_reports/retrieve_contribution_report'
+
 require_relative 'lobbying_disclosure_client/v1/filings'
 require_relative 'lobbying_disclosure_client/v1/filings/list_filings'
 require_relative 'lobbying_disclosure_client/v1/filings/retrieve_filing'

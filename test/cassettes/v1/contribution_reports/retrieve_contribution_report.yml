@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/contributions/b523a31f-91d3-497f-95dd-e28bd7eb541f/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - GET
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Fri, 11 Oct 2024 20:21:19 GMT
+      Content-Length:
+      - '2013'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=add79b2e84b0dbf502a268047191001c; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://lda.senate.gov/api/v1/contributions/b523a31f-91d3-497f-95dd-e28bd7eb541f/","filing_uuid":"b523a31f-91d3-497f-95dd-e28bd7eb541f","filing_type":"MM","filing_type_display":"Mid-Year
+        Report","filing_year":2016,"filing_period":"mid_year","filing_period_display":"Mid-Year
+        (Jan 1 - Jun 30)","filing_document_url":"https://lda.senate.gov/filings/public/contribution/b523a31f-91d3-497f-95dd-e28bd7eb541f/print/","filing_document_content_type":"text/html","filer_type":"lobbyist","filer_type_display":"Lobbyist","dt_posted":"2016-07-06T11:08:59.920000-04:00","contact_name":null,"comments":null,"address_1":"Alaska
+        Wilderness League","address_2":"122 C Street NW, Ste. 240","city":"Washington","state":"DC","state_display":"District
+        of Columbia","zip":"20001","country":"US","country_display":"United States
+        of America","registrant":{"id":762,"url":"https://lda.senate.gov/api/v1/registrants/762/","house_registrant_id":31711,"name":"ALASKA
+        WILDERNESS LEAGUE","description":null,"address_1":"122 C Street, NW","address_2":"Suite
+        240","address_3":null,"address_4":null,"city":"Washington","state":"DC","state_display":"District
+        of Columbia","zip":"20001","country":"US","country_display":"United States
+        of America","ppb_country":"US","ppb_country_display":"United States of America","contact_name":"LEAH
+        DONAHEY","contact_telephone":"+1 202-544-5205","dt_updated":"2022-04-06T16:06:34.871892-04:00"},"lobbyist":{"id":52742,"prefix":null,"prefix_display":null,"first_name":"LEAH","nickname":null,"middle_name":null,"last_name":"DONAHEY","suffix":null,"suffix_display":null},"no_contributions":false,"pacs":[],"contribution_items":[{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"DONAHEY,
+        LEAH","payee_name":"BERNIE SANDERS","honoree_name":"None","amount":"15.00","date":"2016-03-29"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"DONAHEY,
+        LEAH","payee_name":"BERNIE SANDERS","honoree_name":"None","amount":"15.00","date":"2016-02-10"}]}'
+  recorded_at: Fri, 11 Oct 2024 20:21:19 GMT
+recorded_with: VCR 6.3.1

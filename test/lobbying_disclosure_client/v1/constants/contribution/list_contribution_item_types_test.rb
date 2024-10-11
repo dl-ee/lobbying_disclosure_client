@@ -4,7 +4,7 @@
 require 'test_helper'
 
 class ListContributionItemTypesTest < Minitest::Test
-  def test_list_filings
+  def test_list_contribution_item_types
     VCR.use_cassette('/v1/constants/contribution/list_contribution_item_types') do
       output = LobbyingDisclosureClient::V1::Constants::Contribution::ListContributionItemTypes.call
 
