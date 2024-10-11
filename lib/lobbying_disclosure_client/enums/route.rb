@@ -9,6 +9,8 @@ module LobbyingDisclosureClient
       enums do
         V1 = new
 
+        V1_Constants_Contribution_ItemTypes = new
+
         V1_Constants_Filing_ListFilingTypes = new
         V1_Constants_Filing_LobbyingActivityIssues = new
         V1_Constants_Filing_GovernmentEntities = new
@@ -42,6 +44,8 @@ module LobbyingDisclosureClient
         path = case self
                when V1
                  '/v1/'
+               when V1_Constants_Contribution_ItemTypes
+                 '/v1/constants/contribution/itemtypes/'
                when V1_Constants_Filing_ListFilingTypes
                  '/v1/constants/filing/filingtypes/'
                when V1_Constants_Filing_LobbyingActivityIssues
