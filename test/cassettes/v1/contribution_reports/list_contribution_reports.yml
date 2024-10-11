@@ -1,0 +1,333 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/contributions/?contribution_amount_min=0.17e2&contribution_payee=Bernie%20Sanders&registrant_name=International%20Union%20of%20Painters%20and%20Allied%20Trades
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - GET
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Fri, 11 Oct 2024 20:52:10 GMT
+      Content-Length:
+      - '34991'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=15d905752dadbe1da2a401574be48dad; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"count":1,"next":null,"previous":null,"results":[{"url":"https://lda.senate.gov/api/v1/contributions/df688fdd-bd0d-4207-9f85-d78b91c7c9de/","filing_uuid":"df688fdd-bd0d-4207-9f85-d78b91c7c9de","filing_type":"MM","filing_type_display":"Mid-Year
+        Report","filing_year":2018,"filing_period":"mid_year","filing_period_display":"Mid-Year
+        (Jan 1 - Jun 30)","filing_document_url":"https://lda.senate.gov/filings/public/contribution/df688fdd-bd0d-4207-9f85-d78b91c7c9de/print/","filing_document_content_type":"text/html","filer_type":"organization","filer_type_display":"Registrant","dt_posted":"2018-07-24T11:48:01.927000-04:00","contact_name":"BRITTON
+        LOFTIN","comments":null,"address_1":"7234 Parkway Dive","address_2":null,"city":"Hanover","state":"MD","state_display":"Maryland","zip":"21076","country":"US","country_display":"United
+        States of America","registrant":{"id":19833,"url":"https://lda.senate.gov/api/v1/registrants/19833/","house_registrant_id":31994,"name":"INTERNATIONAL
+        UNION OF PAINTERS AND ALLIED TRADES","description":"Union Issues","address_1":"7234
+        Parkway Dive","address_2":null,"address_3":null,"address_4":null,"city":"Hanover","state":"MD","state_display":"Maryland","zip":"21076","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"BRITTON LOFTIN","contact_telephone":"+1 410-508-0258","dt_updated":"2024-07-30T14:00:35.708709-04:00"},"lobbyist":null,"no_contributions":false,"pacs":["IUPAT
+        Political Action Together Political Committee"],"contribution_items":[{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"FRIENDS OF CHERI
+        BUSTOS","honoree_name":"Bustos, Cheri","amount":"2500.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DSCC","honoree_name":"DSCC","amount":"15000.00","date":"2018-06-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"NADLER FOR CONGRESS","honoree_name":"Nadler,
+        Jerrold","amount":"2500.00","date":"2018-02-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"CITIZENS FOR
+        ELEANOR HOLMES NORTON","honoree_name":"Norton, Eleanor","amount":"1500.00","date":"2018-03-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"FRIENDS OF MARK
+        WARNER","honoree_name":"Warner, Mark","amount":"1000.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"PETERSON FOR
+        CONGRESS","honoree_name":"Peterson, Collin","amount":"5000.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MONTANANS FOR
+        TESTER","honoree_name":"Tester, Jon","amount":"2500.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"NANCY PELOSI
+        FOR CONGRESS","honoree_name":"Pelosi, Nancy","amount":"5000.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MEL HALL FOR
+        CONGRESS","honoree_name":"Hall, Mel","amount":"2000.00","date":"2018-06-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"JACKIE SPEIER
+        FOR CONGRESS","honoree_name":"Speier, Jackie","amount":"5000.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"TITUS FOR CONGRESS","honoree_name":"Titus,
+        Dina","amount":"5000.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"JOBS, OPPORTUNITIES
+        AND EDUCATION PAC (JOE-PAC)","honoree_name":"Crowley, Joseph","amount":"2500.00","date":"2018-02-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"VAL DEMINGS FOR
+        CONGRESS","honoree_name":"Demings, Val","amount":"5000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"RHODE ISLAND
+        VICTORY FUND 2018","honoree_name":"Whitehouse, Sheldon","amount":"2500.00","date":"2018-04-05"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"COMMITTEE TO
+        ELECT RICHARD OJEDA","honoree_name":"Ojeda, Richard","amount":"5000.00","date":"2018-04-27"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MCCOLLUM FOR
+        CONGRESS","honoree_name":"McCollum, Betty","amount":"2500.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"SCHAKOWSKY FOR
+        CONGRESS","honoree_name":"Schakowsky, Jan","amount":"1000.00","date":"2018-06-13"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DONNELLY FOR
+        INDIANA","honoree_name":"Donnelly, Joe","amount":"2500.00","date":"2018-04-05"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DCCC BUILDING
+        FUND","honoree_name":"DCCC Building Fund","amount":"25000.00","date":"2018-06-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DELBENE FOR CONGRESS","honoree_name":"Delbene,
+        Suzan","amount":"5000.00","date":"2018-01-08"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BONAMICI FOR
+        CONGRESS","honoree_name":"Bonamici, Suzanne","amount":"5000.00","date":"2018-01-08"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DAKOTA PRAIRIE
+        PAC","honoree_name":"Heitkamp, Heidi","amount":"5000.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"PEOPLE FOR PATTY
+        MURRAY","honoree_name":"Murray, Patty","amount":"1000.00","date":"2018-02-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"LOUISE SLAUGHTER
+        RE-ELECTION COMMITTEE","honoree_name":"Slaughter, Louise","amount":"1000.00","date":"2018-03-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"COURTNEY FOR
+        CONGRESS","honoree_name":"Courtney, Joseph","amount":"2000.00","date":"2018-05-04"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"KATHERINE CLARK
+        FOR CONGRESS","honoree_name":"Clark, Katherine","amount":"2500.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MARK DESAULNIER
+        FOR CONGRESS","honoree_name":"Desaulnier, Mark","amount":"5000.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MISSOURI DEMOCRATIC
+        STATE COMMITTEE - FEDERAL","honoree_name":"Missouri Democratic State Committee
+        - Federal","amount":"1000.00","date":"2018-05-04"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"O''CONNOR FOR
+        CONGRESS","honoree_name":"O''Connor, Daniel","amount":"2000.00","date":"2018-06-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"KOHL FOR CONGRESS","honoree_name":"Kohl,
+        Dan","amount":"2500.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"HOYER FOR CONGRESS","honoree_name":"Hoyer,
+        Steny","amount":"2000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"CICILLINE COMMITTEE","honoree_name":"Cicilline,
+        David","amount":"1000.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"LANGEVIN FOR
+        CONGRESS","honoree_name":"Langevin, Jim","amount":"500.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"THE BILL KEATING
+        COMMITTEE","honoree_name":"Keating, William","amount":"2500.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"TIM RYAN FOR
+        CONGRESS","honoree_name":"Ryan, Tim","amount":"3000.00","date":"2018-01-08"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"TINA SMITH FOR
+        MINNESOTA","honoree_name":"Smith, Tina","amount":"5000.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BILL FOSTER FOR
+        CONGRESS","honoree_name":"Foster, Bill","amount":"5000.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BEN CARDIN FOR
+        SENATE, INC.","honoree_name":"Cardin, Benjamin","amount":"1500.00","date":"2018-04-23"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"JEFFRIES FOR
+        CONGRESS","honoree_name":"Jeffries, Hakeem","amount":"2500.00","date":"2018-02-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BEN CARDIN FOR
+        SENATE, INC.","honoree_name":"Cardin, Benjamin","amount":"500.00","date":"2018-04-23"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DEMOCRATIC PARTY
+        OF OREGON - FEDERAL ACCOUNT","honoree_name":"Democratic Party of Oregon -
+        Federal Account","amount":"5000.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"SUOZZI FOR CONGRESS","honoree_name":"Suozzi,
+        Thomas","amount":"2500.00","date":"2018-04-27"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"JOHN MORGANELLI
+        FOR CONGRESS COMMITTEE","honoree_name":"Morganelli, John","amount":"5000.00","date":"2018-02-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BERA FOR CONGRESS","honoree_name":"Bera,
+        Ami","amount":"5000.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"HOYER FOR CONGRESS","honoree_name":"Hoyer,
+        Steny","amount":"1000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"TJ COX FOR CONGRESS","honoree_name":"Cox,
+        Terrance","amount":"5000.00","date":"2018-06-13"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"FRIENDS OF BEN
+        MCADAMS","honoree_name":"McAdams, Ben","amount":"5000.00","date":"2018-06-13"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"O''CONNOR FOR
+        CONGRESS","honoree_name":"O''Connor, Daniel","amount":"1000.00","date":"2018-04-05"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"RANDY BRYCE FOR
+        CONGRESS","honoree_name":"Bryce, Randy","amount":"5000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DUTCH RUPPERSBERGER
+        FOR CONGRESS COMMITTEE","honoree_name":"Ruppersberger, C.A.","amount":"1000.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MCCASKILL VICTORY
+        FUND","honoree_name":"McCaskill, Claire","amount":"6500.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"SEAN PATRICK
+        MALONEY FOR CONGRESS","honoree_name":"Maloney, Sean","amount":"2500.00","date":"2018-02-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"STEPHANIE MURPHY
+        FOR CONGRESS","honoree_name":"Murphy, Stephanie","amount":"2500.00","date":"2018-06-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"AFTAB FOR OHIO","honoree_name":"Pureval,
+        Aftab","amount":"1000.00","date":"2018-03-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"LIZ FOR INDIANA","honoree_name":"Watson,
+        Liz","amount":"5000.00","date":"2018-06-13"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"SUSIE LEE FOR
+        CONGRESS","honoree_name":"Lee, Susie","amount":"5000.00","date":"2018-01-08"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"LISA BLUNT ROCHESTER
+        FOR CONGRESS","honoree_name":"Blunt Rochester, Lisa","amount":"500.00","date":"2018-03-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MANNO FOR CONGRESS","honoree_name":"Manno,
+        Roger","amount":"2000.00","date":"2018-03-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"LAMB FOR CONGRESS","honoree_name":"Lamb,
+        Conor","amount":"5000.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MANCHIN FOR WEST
+        VIRGINIA","honoree_name":"Manchin, Joe","amount":"2500.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"GARAMENDI FOR
+        CONGRESS","honoree_name":"Garamendi, John","amount":"2300.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"TOM O''HALLERAN
+        FOR CONGRESS","honoree_name":"O''Halleran, Tom","amount":"5000.00","date":"2018-01-08"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DEFAZIO FOR CONGRESS","honoree_name":"DeFazio,
+        Peter","amount":"5000.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"COMMITTEE FOR
+        A LIVABLE FUTURE","honoree_name":"Blumenauer, Earl","amount":"5000.00","date":"2018-01-08"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DEFAZIO FOR CONGRESS","honoree_name":"DeFazio,
+        Peter","amount":"5000.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BRIAN HIGGINS
+        FOR CONGRESS","honoree_name":"Higgins, Brian","amount":"1000.00","date":"2018-03-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"JOE MORELLE FOR
+        CONGRESS","honoree_name":"Morelle, Joseph","amount":"2500.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MCNERNEY FOR
+        CONGRESS","honoree_name":"McNerney, Jerry","amount":"5000.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"CICILLINE COMMITTEE","honoree_name":"Cicilline,
+        David","amount":"1000.00","date":"2018-03-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"LISA BLUNT ROCHESTER
+        FOR CONGRESS","honoree_name":"Blunt Rochester, Lisa","amount":"3500.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BOB CASEY FOR
+        SENATE INC","honoree_name":"Casey, Bob","amount":"1500.00","date":"2018-04-30"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"JOE KENNEDY FOR
+        CONGRESS","honoree_name":"Kennedy, Joseph","amount":"2500.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"FRIENDS OF ROSA
+        DELAURO","honoree_name":"DeLauro, Rosa","amount":"2500.00","date":"2018-05-04"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"WASHINGTON STATE
+        DEMOCRATIC CENTRAL COMMITTEE - FEDERAL ACCOUNT","honoree_name":"Washington
+        State Democratic Central Committee - Federal Account","amount":"5000.00","date":"2018-01-04"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"WEXTON FOR CONGRESS","honoree_name":"Wexton,
+        Jennifer","amount":"1000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BARBARA LEE FOR
+        CONGRESS","honoree_name":"Lee, Barbara","amount":"5000.00","date":"2018-06-13"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"RICHARD E NEAL
+        FOR CONGRESS COMMITTEE","honoree_name":"Neal, Richard","amount":"2500.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MARK MACKENZIE
+        FOR CONGRESS","honoree_name":"MacKenzie, Mark","amount":"5000.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MATT BROLLEY
+        FOR CONGRESS","honoree_name":"Brolley, Matt","amount":"2000.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"WELCH FOR CONGRESS","honoree_name":"Welch,
+        Peter","amount":"2500.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MCEACHIN FOR
+        CONGRESS","honoree_name":"McEachin, A. Donald","amount":"1000.00","date":"2018-06-13"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BOB CASEY FOR
+        SENATE INC","honoree_name":"Casey, Bob","amount":"1750.00","date":"2018-04-30"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"PEOPLE FOR PATTY
+        MURRAY","honoree_name":"Murray, Patty","amount":"2000.00","date":"2018-02-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"PINGREE FOR CONGRESS","honoree_name":"Pingree,
+        Chellie","amount":"2500.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"ELLISON FOR CONGRESS","honoree_name":"Ellison,
+        Keith","amount":"2500.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BUNNY FOR CONGRESS","honoree_name":"Bunny,
+        Sean","amount":"5000.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MARCIA FUDGE
+        FOR CONGRESS","honoree_name":"Fudge, Marcia","amount":"2500.00","date":"2018-01-08"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DEBBIE WASSERMAN
+        SCHULTZ FOR CONGRESS","honoree_name":"Wasserman-Schultz, Debbie","amount":"5000.00","date":"2018-06-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MOULTON FOR CONGRESS","honoree_name":"Moulton,
+        Seth","amount":"2500.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BOB CASEY FOR
+        SENATE INC","honoree_name":"Casey, Bob","amount":"3250.00","date":"2018-04-30"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MAD4PA PAC","honoree_name":"Dean,
+        Madeleine","amount":"5000.00","date":"2018-06-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"PERLMUTTER FOR
+        CONGRESS","honoree_name":"Perlmutter, Edwin","amount":"2500.00","date":"2018-04-23"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"KAINE FOR VIRGINIA","honoree_name":"Kaine,
+        Tim","amount":"500.00","date":"2018-03-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"LAMB FOR CONGRESS","honoree_name":"Lamb,
+        Conor","amount":"5000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"TJ MULLOY FOR
+        CONGRESS","honoree_name":"Mulloy, TJ","amount":"1000.00","date":"2018-03-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BRINDISI FOR
+        CONGRESS","honoree_name":"Brindisi, Anthony","amount":"5000.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"HEIDI VICTORY
+        FUND","honoree_name":"Heitkamp, Heidi","amount":"5000.00","date":"2018-02-21"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"PETERSON FOR
+        CONGRESS","honoree_name":"Peterson, Collin","amount":"2500.00","date":"2018-04-27"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DSCC HEADQUARTERS
+        ACCOUNT","honoree_name":"DSCC Headquarters Account","amount":"35000.00","date":"2018-06-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"RHODE ISLAND
+        VICTORY FUND 2018","honoree_name":"Whitehouse, Sheldon","amount":"2500.00","date":"2018-06-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BONAMICI FOR
+        CONGRESS","honoree_name":"Bonamici, Suzanne","amount":"5000.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"EMMER FOR CONGRESS","honoree_name":"Emmer,
+        Tom","amount":"2500.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"KAINE FOR VIRGINIA","honoree_name":"Kaine,
+        Tim","amount":"2000.00","date":"2018-03-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"IDAHO STATE DEMOCRATIC
+        PARTY - FEDERAL","honoree_name":"Idaho State Democratic Party - Federal","amount":"5000.00","date":"2018-01-08"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"RICH LAZER FOR
+        CONGRESS","honoree_name":"Lazer, Rich","amount":"5000.00","date":"2018-03-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"FRIENDS OF SHERROD
+        BROWN","honoree_name":"Brown, Sherrod","amount":"5000.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"VAN DREW FOR
+        CONGRESS","honoree_name":"Van Drew, Jeff","amount":"5000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"FOLLOW THE NORTH
+        STAR FUND","honoree_name":"Klobuchar, Amy","amount":"5000.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DR. KIM SCHRIER
+        FOR CONGRESS","honoree_name":"Schrier, Kim","amount":"5000.00","date":"2018-02-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"EGGMAN FOR CONGRESS","honoree_name":"Eggman,
+        Michael","amount":"5000.00","date":"2018-06-13"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"SWALWELL FOR
+        CONGRESS","honoree_name":"Swalwell, Eric","amount":"5000.00","date":"2018-01-08"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"ANGIE CRAIG FOR
+        CONGRESS","honoree_name":"Craig, Angela","amount":"5000.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MAD4PA PAC","honoree_name":"Dean,
+        Madeleine","amount":"1000.00","date":"2018-04-27"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"CONNOLLY FOR
+        CONGRESS","honoree_name":"Connolly, Gerald","amount":"1000.00","date":"2018-04-23"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DELBENE FOR CONGRESS","honoree_name":"Delbene,
+        Suzan","amount":"5000.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"SIRES FOR CONGRESS","honoree_name":"Sires,
+        Albio","amount":"1000.00","date":"2018-06-04"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"FRIENDS OF BERNIE
+        SANDERS","honoree_name":"Sanders, Bernie","amount":"5000.00","date":"2018-02-01"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"ANGUS KING FOR
+        U.S. SENATE CAMPAIGN","honoree_name":"King, Angus","amount":"2500.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BLUE POWER PAC","honoree_name":"Norcross,
+        Donald","amount":"5000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"PRAIRIE PAC","honoree_name":"Durbin,
+        Richard","amount":"500.00","date":"2018-03-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"COMMITTEE TO
+        ELECT ERIC DING","honoree_name":"Feigl-Ding, Eric","amount":"2000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"WV STATE DEMOCRATIC
+        EXECUTIVE COMMITTEE - FEDERAL ACCOUNT","honoree_name":"WV State Democratic
+        Executive Committee - Federal Account","amount":"5000.00","date":"2018-01-19"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DAN WARD FOR
+        CONGRESS","honoree_name":"Ward, Daniel","amount":"5000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"HOYER FOR CONGRESS","honoree_name":"Hoyer,
+        Steny","amount":"3000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DONNA MERCADO
+        KIM FOR CONGRESS","honoree_name":"Kim, Donna","amount":"5000.00","date":"2018-05-22"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"RE-ELECT MCGOVERN
+        COMMITTEE","honoree_name":"McGovern, James","amount":"2500.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"KAPTUR FOR CONGRESS","honoree_name":"Kaptur,
+        Marcy","amount":"2500.00","date":"2018-01-08"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"MCCASKILL FOR
+        MISSOURI","honoree_name":"McCaskill, Claire","amount":"1000.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"STEPHEN LYNCH
+        FOR CONGRESS","honoree_name":"Lynch, Stephen","amount":"2500.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"DCCC","honoree_name":"DCCC","amount":"15000.00","date":"2018-06-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"VICENTE GONZALEZ
+        FOR CONGRESS","honoree_name":"Gonzalez, Vicente","amount":"1000.00","date":"2018-01-08"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"CAPUANO FOR CONGRESS
+        COMMITTEE","honoree_name":"Capuano, Michael","amount":"2500.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"BRENDA LAWRENCE
+        FOR CONGRESS","honoree_name":"Lawrence, Brenda","amount":"5000.00","date":"2018-01-25"},{"contribution_type":"feca","contribution_type_display":"FECA","contributor_name":"IUPAT
+        POLITICAL ACTION TOGETHER POLITICAL COMMITTEE","payee_name":"GRETCHEN DRISKELL
+        FOR CONGRESS","honoree_name":"Driskell, Gretchen","amount":"1000.00","date":"2018-03-22"}]}]}'
+  recorded_at: Fri, 11 Oct 2024 20:52:10 GMT
+recorded_with: VCR 6.3.1

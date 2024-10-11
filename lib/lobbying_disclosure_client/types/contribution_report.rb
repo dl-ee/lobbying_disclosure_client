@@ -13,7 +13,7 @@ module LobbyingDisclosureClient
       const :contact_name, T.nilable(String)
       const :contribution_items, T::Array[LobbyingDisclosureClient::Types::ContributionItem]
       const :country, LobbyingDisclosureClient::Enums::Country
-      const :country_display, String
+      const :country_display, T.nilable(String)
       const :dt_posted, DateTime
       const :filer_type, LobbyingDisclosureClient::Enums::FilerType
       const :filer_type_display, String
@@ -25,7 +25,7 @@ module LobbyingDisclosureClient
       const :filing_type_display, String
       const :filing_uuid, String
       const :filing_year, Integer
-      const :lobbyist, LobbyingDisclosureClient::Types::Lobbyist
+      const :lobbyist, T.nilable(LobbyingDisclosureClient::Types::Lobbyist)
       const :no_contributions, T.nilable(T::Boolean)
       const :pacs, T.nilable(T::Array[String])
       const :registrant, LobbyingDisclosureClient::Types::Registrant
