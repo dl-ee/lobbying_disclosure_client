@@ -14,6 +14,7 @@ require_relative 'lobbying_disclosure_client/auth/password/reset/confirm'
 require_relative 'lobbying_disclosure_client/client'
 
 require_relative 'lobbying_disclosure_client/enums'
+require_relative 'lobbying_disclosure_client/enums/contribution_type'
 require_relative 'lobbying_disclosure_client/enums/country'
 require_relative 'lobbying_disclosure_client/enums/expenses_method'
 require_relative 'lobbying_disclosure_client/enums/filing_period'

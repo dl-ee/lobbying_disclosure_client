@@ -9,6 +9,7 @@ module LobbyingDisclosureClient
       class ItemToValidate < T::Struct
         const :enum_klass, T.class_of(T::Enum)
         const :api_klass, T.any(
+          T.class_of(LobbyingDisclosureClient::V1::Constants::Contribution::ListContributionItemTypes),
           T.class_of(LobbyingDisclosureClient::V1::Constants::Filing::ListFilingTypes),
           T.class_of(LobbyingDisclosureClient::V1::Constants::Filing::ListLobbyingActivityGeneralIssues),
           T.class_of(LobbyingDisclosureClient::V1::Constants::General::ListCountries),
@@ -20,6 +21,10 @@ module LobbyingDisclosureClient
 
       ITEMS_TO_VALIDATE = T.let(
         [
+          ItemToValidate.new(
+            enum_klass: LobbyingDisclosureClient::Enums::ContributionType,
+            api_klass: LobbyingDisclosureClient::V1::Constants::Contribution::ListContributionItemTypes
+          ),
           ItemToValidate.new(
             enum_klass: LobbyingDisclosureClient::Enums::FilingType,
             api_klass: LobbyingDisclosureClient::V1::Constants::Filing::ListFilingTypes
