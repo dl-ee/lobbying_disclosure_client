@@ -69,6 +69,9 @@ require_relative 'lobbying_disclosure_client/v1/filings'
 require_relative 'lobbying_disclosure_client/v1/filings/list_filings'
 require_relative 'lobbying_disclosure_client/v1/filings/retrieve_filing'
 
+require_relative 'lobbying_disclosure_client/v1/registrants'
+require_relative 'lobbying_disclosure_client/v1/registrants/retrieve_registrant'
+
 require_relative 'lobbying_disclosure_client/util'
 require_relative 'lobbying_disclosure_client/util/constants_validator'
 

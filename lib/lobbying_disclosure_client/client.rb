@@ -10,7 +10,7 @@ module LobbyingDisclosureClient
     sig do
       params(
         route: LobbyingDisclosureClient::Enums::Route,
-        path_params: T::Array[String],
+        path_params: T::Array[T.any(String, Integer)],
         query_params: T::Hash[String, T.untyped]
       ).returns(
         T.untyped

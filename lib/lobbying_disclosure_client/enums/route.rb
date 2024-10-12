@@ -27,6 +27,8 @@ module LobbyingDisclosureClient
         V1_Filings_ListFilings = new
         V1_Filings_RetrieveFiling = new
 
+        V1_Registrants_RetrieveRegistrant = new
+
         Auth_Login = new
         Auth_Password_Reset = new
         Auth_Password_Reset_Confirm = new
@@ -40,7 +42,7 @@ module LobbyingDisclosureClient
 
       sig do
         params(
-          path_params: T::Array[String]
+          path_params: T::Array[T.any(String, Integer)]
         ).returns(String)
       end
       def to_full_api_path(path_params: [])
@@ -67,6 +69,8 @@ module LobbyingDisclosureClient
                  '/v1/contributions/'
                when V1_Filings_ListFilings, V1_Filings_RetrieveFiling
                  '/v1/filings/'
+               when V1_Registrants_RetrieveRegistrant
+                 '/v1/registrants/'
                when Auth_Login
                  '/auth/login/'
                when Auth_Password_Reset
