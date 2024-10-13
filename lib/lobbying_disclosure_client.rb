@@ -74,7 +74,6 @@ require_relative 'lobbying_disclosure_client/v1/registrants/list_registrants'
 require_relative 'lobbying_disclosure_client/v1/registrants/retrieve_registrant'
 
 require_relative 'lobbying_disclosure_client/util'
-require_relative 'lobbying_disclosure_client/util/constants_validator'
 
 module LobbyingDisclosureClient
   class << self

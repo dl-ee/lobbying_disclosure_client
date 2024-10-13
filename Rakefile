@@ -12,5 +12,6 @@ task default: :test
 
 desc 'Validate enums against values from the API'
 task :validate_constants do
+  require_relative 'lib/lobbying_disclosure_client/util/constants_validator'
   LobbyingDisclosureClient::Util::ConstantsValidator.validate!
 end

@@ -4,6 +4,10 @@
 require 'test_helper'
 
 class ConstantsValidatorTest < Minitest::Test
+  def setup
+    require_relative '../../../lib/lobbying_disclosure_client/util/constants_validator'
+  end
+
   def test_success
     stubbed_items_to_validate = [
       LobbyingDisclosureClient::Util::ConstantsValidator::ItemToValidate.new(
