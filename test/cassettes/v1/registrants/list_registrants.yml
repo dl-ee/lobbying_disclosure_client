@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/registrants/?registrant_name=Alaska%20Wilderness%20League
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - GET
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sun, 13 Oct 2024 00:24:09 GMT
+      Content-Length:
+      - '1233'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=e670a95fc037cf2bccd0cd4a4ce920b8; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"count":2,"next":null,"previous":null,"results":[{"id":762,"url":"https://lda.senate.gov/api/v1/registrants/762/","house_registrant_id":31711,"name":"ALASKA
+        WILDERNESS LEAGUE","description":null,"address_1":"122 C Street, NW","address_2":"Suite
+        240","address_3":null,"address_4":null,"city":"Washington","state":"DC","state_display":"District
+        of Columbia","zip":"20001","country":"US","country_display":"United States
+        of America","ppb_country":"US","ppb_country_display":"United States of America","contact_name":"LEAH
+        DONAHEY","contact_telephone":"+1 202-544-5205","dt_updated":"2022-04-06T16:06:34.871892-04:00"},{"id":401105164,"url":"https://lda.senate.gov/api/v1/registrants/401105164/","house_registrant_id":401105164,"name":"ALASKA
+        WILDERNESS LEAGUE ACTION","description":"501(c)4 nonprofit organization","address_1":"122
+        C Street NW","address_2":"Suite 650","address_3":null,"address_4":null,"city":"Washington","state":"DC","state_display":"District
+        of Columbia","zip":"20001","country":"US","country_display":"United States
+        of America","ppb_country":"US","ppb_country_display":"United States of America","contact_name":"MLADEN
+        MATES","contact_telephone":"+1 202-266-0423","dt_updated":"2024-08-02T09:24:00.592560-04:00"}]}'
+  recorded_at: Sun, 13 Oct 2024 00:24:09 GMT
+recorded_with: VCR 6.3.1
