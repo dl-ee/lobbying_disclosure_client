@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/clients/202513/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - GET
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Sun, 13 Oct 2024 23:09:16 GMT
+      Content-Length:
+      - '1080'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=add79b2e84b0dbf502a268047191001c; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"id":202513,"url":"https://lda.senate.gov/api/v1/clients/202513/","client_id":36,"name":"MICROSOFT
+        CORPORATION","general_description":"Software and technology.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2018-03-19","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"}}'
+  recorded_at: Sun, 13 Oct 2024 23:09:16 GMT
+recorded_with: VCR 6.3.1

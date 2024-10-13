@@ -30,6 +30,8 @@ module LobbyingDisclosureClient
         V1_Registrants_ListRegistrants = new
         V1_Registrants_RetrieveRegistrant = new
 
+        V1_Clients_RetrieveClient = new
+
         Auth_Login = new
         Auth_Password_Reset = new
         Auth_Password_Reset_Confirm = new
@@ -72,6 +74,8 @@ module LobbyingDisclosureClient
                  '/v1/filings/'
                when V1_Registrants_ListRegistrants, V1_Registrants_RetrieveRegistrant
                  '/v1/registrants/'
+               when V1_Clients_RetrieveClient
+                 '/v1/clients/'
                when Auth_Login
                  '/auth/login/'
                when Auth_Password_Reset
