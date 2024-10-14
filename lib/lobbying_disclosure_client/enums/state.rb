@@ -57,21 +57,14 @@ module LobbyingDisclosureClient
         Wi = new('WI')
         Wy = new('WY')
 
-        # Canadian provinces
-
-        Ab = new('AB')
-        Bc = new('BC')
-        Mb = new('MB')
-        Nb = new('NB')
-        Nl = new('NL')
-        Nt = new('NT')
-        Ns = new('NS')
-        Nu = new('NU')
-        On = new('ON')
-        Pe = new('PE')
-        Qc = new('QC')
-        Sk = new('SK')
-        Yt = new('YT')
+        As = new('AS')
+        Aa = new('AA')
+        Ae = new('AE')
+        Ap = new('AP')
+        Gu = new('GU')
+        Mp = new('MP')
+        Pr = new('PR')
+        Vi = new('VI')
       end
     end
   end

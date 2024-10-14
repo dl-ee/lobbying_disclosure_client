@@ -256,10 +256,9 @@ module LobbyingDisclosureClient
         Zm = new('ZM')
         Zw = new('ZW')
 
-        # Both of these values are listed as possible values in the API documentation,
-        # but it's not totally clear what they're intended to represent
+        # This is listed as a possible value in the API documentation,
+        # but it's unclear what it's intended to represent
 
-        Blank = new('')
         ZeroZero = new('00')
       end
     end
