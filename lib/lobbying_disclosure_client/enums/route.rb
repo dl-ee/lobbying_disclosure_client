@@ -33,6 +33,7 @@ module LobbyingDisclosureClient
         V1_Clients_ListClients = new
         V1_Clients_RetrieveClient = new
 
+        V1_Lobbyists_ListLobbyists = new
         V1_Lobbyists_RetrieveLobbyist = new
 
         Auth_Login = new
@@ -79,7 +80,7 @@ module LobbyingDisclosureClient
                  '/v1/registrants/'
                when V1_Clients_ListClients, V1_Clients_RetrieveClient
                  '/v1/clients/'
-               when V1_Lobbyists_RetrieveLobbyist
+               when V1_Lobbyists_ListLobbyists, V1_Lobbyists_RetrieveLobbyist
                  '/v1/lobbyists/'
                when Auth_Login
                  '/auth/login/'

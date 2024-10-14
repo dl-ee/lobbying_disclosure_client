@@ -80,6 +80,7 @@ require_relative 'lobbying_disclosure_client/v1/clients/list_clients'
 require_relative 'lobbying_disclosure_client/v1/clients/retrieve_client'
 
 require_relative 'lobbying_disclosure_client/v1/lobbyists'
+require_relative 'lobbying_disclosure_client/v1/lobbyists/list_lobbyists'
 require_relative 'lobbying_disclosure_client/v1/lobbyists/retrieve_lobbyist'
 
 require_relative 'lobbying_disclosure_client/util'
