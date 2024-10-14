@@ -30,6 +30,7 @@ module LobbyingDisclosureClient
         V1_Registrants_ListRegistrants = new
         V1_Registrants_RetrieveRegistrant = new
 
+        V1_Clients_ListClients = new
         V1_Clients_RetrieveClient = new
 
         Auth_Login = new
@@ -74,7 +75,7 @@ module LobbyingDisclosureClient
                  '/v1/filings/'
                when V1_Registrants_ListRegistrants, V1_Registrants_RetrieveRegistrant
                  '/v1/registrants/'
-               when V1_Clients_RetrieveClient
+               when V1_Clients_ListClients, V1_Clients_RetrieveClient
                  '/v1/clients/'
                when Auth_Login
                  '/auth/login/'

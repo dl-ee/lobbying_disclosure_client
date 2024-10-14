@@ -1,0 +1,133 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/clients/?client_name=Boston%20Scientific%20Corporation
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Allow:
+      - GET
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Mon, 14 Oct 2024 22:08:43 GMT
+      Content-Length:
+      - '10991'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=98c9b5bce2c1b37955e8c0c655af487f; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"count":10,"next":null,"previous":null,"results":[{"id":102037,"url":"https://lda.senate.gov/api/v1/clients/102037/","client_id":1004924,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":null,"client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":null,"ppb_state_display":null,"ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2008-01-01","registrant":{"id":1171,"url":"https://lda.senate.gov/api/v1/registrants/1171/","house_registrant_id":31749,"name":"ALPINE
+        GROUP PARTNERS, LLC.","description":"Public relations consulting firm","address_1":"500
+        North Capitol Street, NW","address_2":"Suite 210","address_3":null,"address_4":null,"city":"Washington","state":"DC","state_display":"District
+        of Columbia","zip":"20001","country":"US","country_display":"United States
+        of America","ppb_country":"US","ppb_country_display":"United States of America","contact_name":"ALISA
+        JANE HESS","contact_telephone":"+1 469-371-2535","dt_updated":"2024-07-17T13:23:53.038918-04:00"}},{"id":104572,"url":"https://lda.senate.gov/api/v1/clients/104572/","client_id":1003874,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"Development and advocacy of
+        less-invasive medical devices and procedures.","client_government_entity":false,"client_self_select":false,"state":null,"state_display":null,"country":"","country_display":"*
+        Undetermined","ppb_state":null,"ppb_state_display":null,"ppb_country":"","ppb_country_display":"*
+        Undetermined","effective_date":"2007-08-14","registrant":{"id":4301,"url":"https://lda.senate.gov/api/v1/registrants/4301/","house_registrant_id":31381,"name":"ARNOLD
+        & PORTER KAYE SCHOLER LLP","description":"Law firm","address_1":"601 Massachusetts
+        Ave. NW","address_2":null,"address_3":null,"address_4":null,"city":"Washington","state":"DC","state_display":"District
+        of Columbia","zip":"20001","country":"US","country_display":"United States
+        of America","ppb_country":"US","ppb_country_display":"United States of America","contact_name":"NICHOLAS
+        TOWNSEND","contact_telephone":"+1 202-942-5249","dt_updated":"2024-07-30T21:43:37.873835-04:00"}},{"id":129043,"url":"https://lda.senate.gov/api/v1/clients/129043/","client_id":315,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":null,"client_government_entity":false,"client_self_select":null,"state":"MA","state_display":"Massachusetts","country":"US","country_display":"United
+        States of America","ppb_state":null,"ppb_state_display":null,"ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2007-08-14","registrant":{"id":22201,"url":"https://lda.senate.gov/api/v1/registrants/22201/","house_registrant_id":30855,"name":"LATHAM
+        & WATKINS LLP","description":"law firm","address_1":"555 11th Street, NW","address_2":"Suite
+        1000","address_3":null,"address_4":null,"city":"Washington","state":"DC","state_display":"District
+        of Columbia","zip":"20004","country":"US","country_display":"United States
+        of America","ppb_country":"US","ppb_country_display":"United States of America","contact_name":"EMILY
+        GIBSON","contact_telephone":"+1 213-892-3210","dt_updated":"2022-04-06T16:04:30.396745-04:00"}},{"id":162082,"url":"https://lda.senate.gov/api/v1/clients/162082/","client_id":1001058,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"manufacturer of medical devices","client_government_entity":false,"client_self_select":false,"state":null,"state_display":null,"country":"","country_display":"*
+        Undetermined","ppb_state":null,"ppb_state_display":null,"ppb_country":"","ppb_country_display":"*
+        Undetermined","effective_date":"2007-08-01","registrant":{"id":62778,"url":"https://lda.senate.gov/api/v1/registrants/62778/","house_registrant_id":35395,"name":"RICCHETTI
+        INCORPORATED","description":"Lobbying and consulting","address_1":"601 13th
+        Street, NW","address_2":"Suite 1150 N","address_3":null,"address_4":null,"city":"Washington","state":"DC","state_display":"District
+        of Columbia","zip":"20005","country":"US","country_display":"United States
+        of America","ppb_country":"US","ppb_country_display":"United States of America","contact_name":"JEFF
+        RICCHETTI","contact_telephone":"+1 202-879-9382","dt_updated":"2024-07-30T11:10:34.219469-04:00"}},{"id":162719,"url":"https://lda.senate.gov/api/v1/clients/162719/","client_id":948,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"Health Care","client_government_entity":null,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2004-06-24","registrant":{"id":65191,"url":"https://lda.senate.gov/api/v1/registrants/65191/","house_registrant_id":35579,"name":"VENN
+        STRATEGIES","description":"A political and public affairs consulting firm.","address_1":"750
+        9th St NW, Suite 650","address_2":null,"address_3":null,"address_4":null,"city":"WASHINGTON","state":"DC","state_display":"District
+        of Columbia","zip":"20001","country":"US","country_display":"United States
+        of America","ppb_country":"US","ppb_country_display":"United States of America","contact_name":"JAY
+        ENGLESON","contact_telephone":"+1 301-509-9933","dt_updated":"2024-07-17T10:54:52.056482-04:00"}},{"id":163613,"url":"https://lda.senate.gov/api/v1/clients/163613/","client_id":12,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":null,"client_government_entity":false,"client_self_select":true,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2001-06-01","registrant":{"id":66716,"url":"https://lda.senate.gov/api/v1/registrants/66716/","house_registrant_id":35567,"name":"BOSTON
+        SCIENTIFIC CORPORATION","description":null,"address_1":"1455 PENNSYLVANIA
+        AVENUE, NW","address_2":"SUITE 925","address_3":null,"address_4":null,"city":"WASHINGTON","state":"DC","state_display":"District
+        of Columbia","zip":"20004","country":"US","country_display":"United States
+        of America","ppb_country":"US","ppb_country_display":"United States of America","contact_name":"STEVEN
+        N. LAPIERRE","contact_telephone":"","dt_updated":"2024-07-18T12:42:00.955486-04:00"}},{"id":180708,"url":"https://lda.senate.gov/api/v1/clients/180708/","client_id":51,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":null,"client_government_entity":false,"client_self_select":false,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2007-08-08","registrant":{"id":301697,"url":"https://lda.senate.gov/api/v1/registrants/301697/","house_registrant_id":37801,"name":"WALTER
+        CONSULTING","description":"Federal health care advocacy","address_1":"7111
+        Capitol View Drive","address_2":null,"address_3":null,"address_4":null,"city":"McLean","state":"VA","state_display":"Virginia","zip":"22101","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MRS. SARAH WALTER","contact_telephone":"+1 202-288-8190","dt_updated":"2024-07-30T17:09:36.133051-04:00"}},{"id":181295,"url":"https://lda.senate.gov/api/v1/clients/181295/","client_id":1005002,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"Development and manufacture
+        of medical devices and procedures","client_government_entity":false,"client_self_select":false,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"MA","ppb_state_display":"Massachusetts","ppb_country":"US","ppb_country_display":"United
+        States of America","effective_date":"2008-03-19","registrant":{"id":304736,"url":"https://lda.senate.gov/api/v1/registrants/304736/","house_registrant_id":38067,"name":"TARPLIN,
+        DOWNS & YOUNG, LLC","description":"Health care policy and regulatory and legislative
+        consulting","address_1":"1212 New York Avenue, NW","address_2":"Suite 750","address_3":null,"address_4":null,"city":"Washington","state":"DC","state_display":"District
+        of Columbia","zip":"20005","country":"US","country_display":"United States
+        of America","ppb_country":"US","ppb_country_display":"United States of America","contact_name":"JENNIFER
+        B. YOUNG","contact_telephone":"","dt_updated":"2024-07-22T10:28:35.414323-04:00"}},{"id":202511,"url":"https://lda.senate.gov/api/v1/clients/202511/","client_id":24,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"Developer, manufacturer and
+        marketer of medical devices.","client_government_entity":false,"client_self_select":null,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2017-12-06","registrant":{"id":401104726,"url":"https://lda.senate.gov/api/v1/registrants/401104726/","house_registrant_id":401104726,"name":"10-SQUARE
+        SOLUTIONS","description":"Consulting","address_1":"3600 South Glebe Road","address_2":"Suite
+        324","address_3":null,"address_4":null,"city":"Arlington","state":"VA","state_display":"Virginia","zip":"22202","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MIKE COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2022-04-06T16:06:25.140869-04:00"}},{"id":213596,"url":"https://lda.senate.gov/api/v1/clients/213596/","client_id":12,"name":"BOSTON
+        SCIENTIFIC CORPORATION","general_description":"Manufacturer of medical devices","client_government_entity":null,"client_self_select":false,"state":"DC","state_display":"District
+        of Columbia","country":"US","country_display":"United States of America","ppb_state":"DC","ppb_state_display":"District
+        of Columbia","ppb_country":"US","ppb_country_display":"United States of America","effective_date":"2022-01-01","registrant":{"id":401106351,"url":"https://lda.senate.gov/api/v1/registrants/401106351/","house_registrant_id":401106351,"name":"BRICK
+        STREET STRATEGY","description":"Consulting","address_1":"4530 Chase Oak Court","address_2":null,"address_3":null,"address_4":null,"city":"Zionsville","state":"IN","state_display":"Indiana","zip":"46077","country":"US","country_display":"United
+        States of America","ppb_country":"US","ppb_country_display":"United States
+        of America","contact_name":"MICHAEL COPHER","contact_telephone":"+1 202-812-9106","dt_updated":"2024-07-18T14:08:01.387930-04:00"}}]}'
+  recorded_at: Mon, 14 Oct 2024 22:08:43 GMT
+recorded_with: VCR 6.3.1

@@ -75,6 +75,7 @@ require_relative 'lobbying_disclosure_client/v1/registrants/list_registrants'
 require_relative 'lobbying_disclosure_client/v1/registrants/retrieve_registrant'
 
 require_relative 'lobbying_disclosure_client/v1/clients'
+require_relative 'lobbying_disclosure_client/v1/clients/list_clients'
 require_relative 'lobbying_disclosure_client/v1/clients/retrieve_client'
 
 require_relative 'lobbying_disclosure_client/util'

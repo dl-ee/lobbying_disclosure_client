@@ -17,11 +17,11 @@ module LobbyingDisclosureClient
       const :name, String
       const :ppb_country, LobbyingDisclosureClient::Enums::Country
       const :ppb_country_display, String
-      const :ppb_state, LobbyingDisclosureClient::Enums::State
-      const :ppb_state_display, String
+      const :ppb_state, T.nilable(LobbyingDisclosureClient::Enums::State)
+      const :ppb_state_display, T.nilable(String)
       const :registrant, LobbyingDisclosureClient::Types::Registrant
-      const :state, LobbyingDisclosureClient::Enums::State
-      const :state_display, String
+      const :state, T.nilable(LobbyingDisclosureClient::Enums::State)
+      const :state_display, T.nilable(String)
       const :url, String
 
       sig do
