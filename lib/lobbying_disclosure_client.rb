@@ -37,6 +37,7 @@ require_relative 'lobbying_disclosure_client/types/conviction_disclosure'
 require_relative 'lobbying_disclosure_client/types/foreign_entity'
 require_relative 'lobbying_disclosure_client/types/registrant'
 require_relative 'lobbying_disclosure_client/types/client_with_registrant'
+require_relative 'lobbying_disclosure_client/types/lobbyist_with_registrant'
 require_relative 'lobbying_disclosure_client/types/filing'
 require_relative 'lobbying_disclosure_client/types/constant'
 require_relative 'lobbying_disclosure_client/types/contribution_item'
@@ -77,6 +78,9 @@ require_relative 'lobbying_disclosure_client/v1/registrants/retrieve_registrant'
 require_relative 'lobbying_disclosure_client/v1/clients'
 require_relative 'lobbying_disclosure_client/v1/clients/list_clients'
 require_relative 'lobbying_disclosure_client/v1/clients/retrieve_client'
+
+require_relative 'lobbying_disclosure_client/v1/lobbyists'
+require_relative 'lobbying_disclosure_client/v1/lobbyists/retrieve_lobbyist'
 
 require_relative 'lobbying_disclosure_client/util'
 
