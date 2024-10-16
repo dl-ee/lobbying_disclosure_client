@@ -258,8 +258,11 @@ module LobbyingDisclosureClient
 
         # This is listed as a possible value in the API documentation,
         # but it's unclear what it's intended to represent
-
         ZeroZero = new('00')
+
+        # This is not returned as a possible value in the constants API endpoint,
+        # but empirically it does get returned by other endpoints
+        Blank = new('')
       end
     end
   end

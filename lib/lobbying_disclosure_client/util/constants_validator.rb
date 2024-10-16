@@ -53,6 +53,15 @@ module LobbyingDisclosureClient
         T::Array[ItemToValidate]
       )
 
+      VALUES_RETURNED_BY_API_EMPIRICALLY_BUT_NOT_INCLUDED_IN_CONSTANTS_ENDPOINTS = T.let(
+        {
+          LobbyingDisclosureClient::Enums::Country => [
+            LobbyingDisclosureClient::Enums::Country::Blank.serialize
+          ]
+        }.freeze,
+        T::Hash[T.class_of(T::Enum), T::Array[String]]
+      )
+
       class << self
         extend T::Sig
 
@@ -87,7 +96,7 @@ module LobbyingDisclosureClient
           api_values = api_klass.call.map(&:value)
 
           values_missing_from_enum = api_values - serialized_enum_values
-          extra_values_in_enum = serialized_enum_values - api_values
+          extra_values_in_enum = serialized_enum_values - api_values - (VALUES_RETURNED_BY_API_EMPIRICALLY_BUT_NOT_INCLUDED_IN_CONSTANTS_ENDPOINTS[enum_klass] || [])
 
           unless values_missing_from_enum.empty?
             puts "Detected values in live API result that are missing from #{enum_klass.name}."

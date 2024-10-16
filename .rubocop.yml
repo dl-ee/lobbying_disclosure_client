@@ -36,6 +36,9 @@ Metrics/AbcSize:
 Metrics/PerceivedComplexity:
   Enabled: false
 
+Layout/LineLength:
+  Enabled: false
+
 Sorbet/StrictSigil:
   Enabled: true
   Exclude:
