@@ -97,7 +97,7 @@ module LobbyingDisclosureClient
       when 429
         raise LobbyingDisclosureClient::Errors::RequestThrottledError.new(
           response_body['detail'],
-          response.headers['Retry-After']
+          Integer(response.headers['Retry-After'], 10)
         )
       else
         raise LobbyingDisclosureClient::Errors::UnknownError,

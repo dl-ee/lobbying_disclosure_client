@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://lda.senate.gov/api/v1/filings/some_uuid/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 429
+      message: Too Many Requests
+    headers:
+      Server:
+      - gunicorn
+      Content-Type:
+      - application/json
+      Retry-After:
+      - '28'
+      Allow:
+      - GET
+      X-Frame-Options:
+      - DENY
+      Content-Length:
+      - '69'
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - same-origin
+      Date:
+      - Wed, 16 Oct 2024 15:35:25 GMT
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 1a4f67d77fcdf9317fe4757ff2e67be3=831d9c0d74cae97ebbd5005a5e23fe04; path=/;
+        HttpOnly; Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"detail":"Request was throttled. Expected available in 28 seconds."}'
+  recorded_at: Wed, 16 Oct 2024 15:35:26 GMT
+recorded_with: VCR 6.3.1

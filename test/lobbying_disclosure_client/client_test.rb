@@ -32,4 +32,28 @@ class ClientTest < Minitest::Test
       end
     end
   end
+
+  def test_rate_limit_error
+    # The anonymous rate limit is 15 requests per minute.
+    #
+    # 15.times do
+    #   LobbyingDisclosureClient::V1::Filings::RetrieveFiling.call(
+    #     input: LobbyingDisclosureClient::V1::Filings::RetrieveFiling::Input.new(
+    #       filing_uuid: 'some_uuid'
+    #     )
+    #   )
+    # end
+
+    VCR.use_cassette('/rate_limit_error') do
+      error = assert_raises(LobbyingDisclosureClient::Errors::RequestThrottledError) do
+        LobbyingDisclosureClient::V1::Filings::RetrieveFiling.call(
+          input: LobbyingDisclosureClient::V1::Filings::RetrieveFiling::Input.new(
+            filing_uuid: 'some_uuid'
+          )
+        )
+      end
+
+      assert_instance_of(Integer, error.retry_after)
+    end
+  end
 end
