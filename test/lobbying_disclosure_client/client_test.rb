@@ -4,6 +4,10 @@
 require 'test_helper'
 
 class ClientTest < Minitest::Test
+  def teardown
+    LobbyingDisclosureClient.api_key = nil
+  end
+
   def test_auth_when_no_api_key
     cassette = YAML.load_file('test/cassettes/v1_anonymous.yml')
     api_call = cassette['http_interactions'].first
@@ -17,5 +21,15 @@ class ClientTest < Minitest::Test
     authorization_header = api_call.dig('request', 'headers', 'Authorization').first
 
     assert_match(/^Token \w+$/, authorization_header)
+  end
+
+  def test_invalid_api_key
+    VCR.use_cassette('/invalid_api_key') do
+      LobbyingDisclosureClient.api_key = 'Invalid key'
+
+      assert_raises(LobbyingDisclosureClient::Errors::InvalidApiKeyError) do
+        LobbyingDisclosureClient::V1::Constants::General::ListStates.call
+      end
+    end
   end
 end
