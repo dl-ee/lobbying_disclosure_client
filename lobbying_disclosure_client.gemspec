@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.authors = ['Daniel Lee']
   spec.email = ['daniel.david.lee@pm.me']
+  spec.homepage = 'https://github.com/dlee148/lobbying_disclosure_client'
 
   spec.summary = 'A Ruby wrapper for the Lobbying Disclosure REST API'
   spec.license = 'MIT'
