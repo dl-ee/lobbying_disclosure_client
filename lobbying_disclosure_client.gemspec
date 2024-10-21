@@ -24,9 +24,9 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'bigdecimal'
-  spec.add_dependency 'faraday'
-  spec.add_dependency 'sorbet-runtime'
+  spec.add_dependency 'bigdecimal', '~> 3'
+  spec.add_dependency 'faraday', '~> 2'
+  spec.add_dependency 'sorbet-runtime', '~> 0.5'
 
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
