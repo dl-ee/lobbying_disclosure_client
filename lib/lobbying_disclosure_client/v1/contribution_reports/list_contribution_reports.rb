@@ -8,6 +8,8 @@ module LobbyingDisclosureClient
         extend T::Sig
 
         class Input < T::Struct
+          include LobbyingDisclosureClient::Interfaces::ListEndpointInput
+
           const :contribution_amount_max, T.nilable(BigDecimal)
           const :contribution_amount_min, T.nilable(BigDecimal)
           const :contribution_contributor, T.nilable(String)

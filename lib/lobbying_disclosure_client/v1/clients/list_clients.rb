@@ -8,6 +8,8 @@ module LobbyingDisclosureClient
         extend T::Sig
 
         class Input < T::Struct
+          include LobbyingDisclosureClient::Interfaces::ListEndpointInput
+
           const :client_country, T.nilable(LobbyingDisclosureClient::Enums::Country)
           const :client_name, T.nilable(String)
           const :client_ppb_country, T.nilable(LobbyingDisclosureClient::Enums::Country)

@@ -8,6 +8,8 @@ module LobbyingDisclosureClient
         extend T::Sig
 
         class Input < T::Struct
+          include LobbyingDisclosureClient::Interfaces::ListEndpointInput
+
           const :country, T.nilable(LobbyingDisclosureClient::Enums::Country)
           const :dt_updated_after, T.nilable(DateTime)
           const :dt_updated_before, T.nilable(DateTime)

@@ -8,6 +8,8 @@ module LobbyingDisclosureClient
         extend T::Sig
 
         class Input < T::Struct
+          include LobbyingDisclosureClient::Interfaces::ListEndpointInput
+
           const :id, T.nilable(Integer)
           const :lobbyist_name, T.nilable(String)
           const :ordering, T.nilable(String)

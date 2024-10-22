@@ -34,6 +34,9 @@ require_relative 'lobbying_disclosure_client/errors/request_throttled_error'
 require_relative 'lobbying_disclosure_client/errors/unknown_error'
 require_relative 'lobbying_disclosure_client/errors/unsupported_http_method_error'
 
+require_relative 'lobbying_disclosure_client/interfaces'
+require_relative 'lobbying_disclosure_client/interfaces/list_endpoint_input'
+
 require_relative 'lobbying_disclosure_client/types'
 require_relative 'lobbying_disclosure_client/types/affiliated_organization'
 require_relative 'lobbying_disclosure_client/types/government_entity'
