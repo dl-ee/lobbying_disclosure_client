@@ -24,7 +24,7 @@ Metrics/BlockLength:
 Naming/VariableNumber:
   Enabled: false
 
-RuboCopStyle/OptionalBooleanParameter:
+Style/OptionalBooleanParameter:
   Enabled: false
 
 Metrics/CyclomaticComplexity:

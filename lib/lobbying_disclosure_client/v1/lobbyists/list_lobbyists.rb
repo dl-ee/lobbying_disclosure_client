@@ -20,6 +20,8 @@ module LobbyingDisclosureClient
         end
 
         class Output < T::Struct
+          include LobbyingDisclosureClient::Interfaces::ListEndpointOutput
+
           const :count, Integer
           const :next, T.nilable(String)
           const :previous, T.nilable(String)

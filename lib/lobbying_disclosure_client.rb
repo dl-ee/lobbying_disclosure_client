@@ -36,6 +36,7 @@ require_relative 'lobbying_disclosure_client/errors/unsupported_http_method_erro
 
 require_relative 'lobbying_disclosure_client/interfaces'
 require_relative 'lobbying_disclosure_client/interfaces/list_endpoint_input'
+require_relative 'lobbying_disclosure_client/interfaces/list_endpoint_output'
 
 require_relative 'lobbying_disclosure_client/types'
 require_relative 'lobbying_disclosure_client/types/affiliated_organization'
