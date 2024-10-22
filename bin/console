@@ -2,7 +2,12 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
+require 'dotenv/load'
 require 'lobbying_disclosure_client'
 require 'irb'
+
+if ENV['API_KEY']
+  LobbyingDisclosureClient.api_key = ENV['API_KEY']
+end
 
 IRB.start(__FILE__)

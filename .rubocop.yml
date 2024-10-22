@@ -39,6 +39,9 @@ Metrics/PerceivedComplexity:
 Layout/LineLength:
   Enabled: false
 
+Style/IfUnlessModifier:
+  Enabled: false
+
 Sorbet/StrictSigil:
   Enabled: true
   Exclude:

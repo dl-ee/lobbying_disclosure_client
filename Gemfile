@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 group(:development) do
+  gem 'dotenv', require: false
   gem 'rake', require: false
   gem 'rubocop', require: false
   gem 'rubocop-minitest', require: false
