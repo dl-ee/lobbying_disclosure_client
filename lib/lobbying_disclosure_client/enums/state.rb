@@ -4,6 +4,9 @@
 module LobbyingDisclosureClient
   module Enums
     class State < T::Enum
+      extend T::Sig
+      include LobbyingDisclosureClient::Interfaces::ValidatableEnum
+
       enums do
         Al = new('AL')
         Ak = new('AK')
@@ -65,6 +68,75 @@ module LobbyingDisclosureClient
         Mp = new('MP')
         Pr = new('PR')
         Vi = new('VI')
+      end
+
+      sig do
+        override.returns(String)
+      end
+      def name
+        case self
+        when Al then 'Alabama'
+        when Ak then 'Alaska'
+        when As then 'American Samoa'
+        when Az then 'Arizona'
+        when Ar then 'Arkansas'
+        when Aa then 'Armed Forces Americas'
+        when Ae then 'Armed Forces Europe'
+        when Ap then 'Armed Forces Pacific'
+        when Ca then 'California'
+        when Co then 'Colorado'
+        when Ct then 'Connecticut'
+        when De then 'Delaware'
+        when Dc then 'District of Columbia'
+        when Fl then 'Florida'
+        when Ga then 'Georgia'
+        when Gu then 'Guam'
+        when Hi then 'Hawaii'
+        when Id then 'Idaho'
+        when Il then 'Illinois'
+        when In then 'Indiana'
+        when Ia then 'Iowa'
+        when Ks then 'Kansas'
+        when Ky then 'Kentucky'
+        when La then 'Louisiana'
+        when Me then 'Maine'
+        when Md then 'Maryland'
+        when Ma then 'Massachusetts'
+        when Mi then 'Michigan'
+        when Mn then 'Minnesota'
+        when Ms then 'Mississippi'
+        when Mo then 'Missouri'
+        when Mt then 'Montana'
+        when Ne then 'Nebraska'
+        when Nv then 'Nevada'
+        when Nh then 'New Hampshire'
+        when Nj then 'New Jersey'
+        when Nm then 'New Mexico'
+        when Ny then 'New York'
+        when Nc then 'North Carolina'
+        when Nd then 'North Dakota'
+        when Mp then 'Northern Mariana Islands'
+        when Oh then 'Ohio'
+        when Ok then 'Oklahoma'
+        when Or then 'Oregon'
+        when Pa then 'Pennsylvania'
+        when Pr then 'Puerto Rico'
+        when Ri then 'Rhode Island'
+        when Sc then 'South Carolina'
+        when Sd then 'South Dakota'
+        when Tn then 'Tennessee'
+        when Tx then 'Texas'
+        when Ut then 'Utah'
+        when Vt then 'Vermont'
+        when Vi then 'Virgin Islands'
+        when Va then 'Virginia'
+        when Wa then 'Washington'
+        when Wv then 'West Virginia'
+        when Wi then 'Wisconsin'
+        when Wy then 'Wyoming'
+        else
+          T.absurd(self)
+        end
       end
     end
   end

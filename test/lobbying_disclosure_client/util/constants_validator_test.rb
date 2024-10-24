@@ -18,7 +18,7 @@ class ConstantsValidatorTest < Minitest::Test
 
     stubbed_api_values = LobbyingDisclosureClient::Enums::FilingType.each_value.map do |value|
       LobbyingDisclosureClient::Types::Constant.new(
-        name: value.serialize,
+        name: value.name,
         value: value.serialize
       )
     end

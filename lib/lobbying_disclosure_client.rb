@@ -13,6 +13,11 @@ require_relative 'lobbying_disclosure_client/auth/password/reset/confirm'
 
 require_relative 'lobbying_disclosure_client/client'
 
+require_relative 'lobbying_disclosure_client/interfaces'
+require_relative 'lobbying_disclosure_client/interfaces/list_endpoint_input'
+require_relative 'lobbying_disclosure_client/interfaces/list_endpoint_output'
+require_relative 'lobbying_disclosure_client/interfaces/validatable_enum'
+
 require_relative 'lobbying_disclosure_client/enums'
 require_relative 'lobbying_disclosure_client/enums/contribution_type'
 require_relative 'lobbying_disclosure_client/enums/country'
@@ -33,10 +38,6 @@ require_relative 'lobbying_disclosure_client/errors/not_found_error'
 require_relative 'lobbying_disclosure_client/errors/request_throttled_error'
 require_relative 'lobbying_disclosure_client/errors/unknown_error'
 require_relative 'lobbying_disclosure_client/errors/unsupported_http_method_error'
-
-require_relative 'lobbying_disclosure_client/interfaces'
-require_relative 'lobbying_disclosure_client/interfaces/list_endpoint_input'
-require_relative 'lobbying_disclosure_client/interfaces/list_endpoint_output'
 
 require_relative 'lobbying_disclosure_client/types'
 require_relative 'lobbying_disclosure_client/types/affiliated_organization'

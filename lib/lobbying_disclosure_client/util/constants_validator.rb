@@ -92,11 +92,18 @@ module LobbyingDisclosureClient
 
           puts "Validating #{enum_klass.name} against the live API..."
 
+          api_result = api_klass.call
+
           serialized_enum_values = enum_klass.values.map(&:serialize)
-          api_values = api_klass.call.map(&:value)
+          api_values = api_result.map(&:value)
 
           values_missing_from_enum = api_values - serialized_enum_values
           extra_values_in_enum = serialized_enum_values - api_values - (VALUES_RETURNED_BY_API_EMPIRICALLY_BUT_NOT_INCLUDED_IN_CONSTANTS_ENDPOINTS[enum_klass] || [])
+          values_where_human_readable_name_does_not_match_api = api_result.reject do |constant|
+            T.unsafe(
+              enum_klass.deserialize(constant.value)
+            ).name == constant.name
+          end
 
           unless values_missing_from_enum.empty?
             puts "Detected values in live API result that are missing from #{enum_klass.name}."
@@ -108,7 +115,12 @@ module LobbyingDisclosureClient
             extra_values_in_enum.map { |value| puts "  - \"#{value}\"" }
           end
 
-          if values_missing_from_enum.empty? && extra_values_in_enum.empty?
+          unless values_where_human_readable_name_does_not_match_api.empty?
+            puts "Detected values in #{enum_klass.name} where the human-readable name does match the live API result."
+            values_where_human_readable_name_does_not_match_api.map { |constant| puts "  - \"#{constant.value}\" => \"#{constant.name}\"" }
+          end
+
+          if values_missing_from_enum.empty? && extra_values_in_enum.empty? && values_where_human_readable_name_does_not_match_api.empty?
             puts "#{enum_klass} passed validation 🏆\n\n"
             true
           else
