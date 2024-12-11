@@ -32,7 +32,7 @@ module LobbyingDisclosureClient
       const :registrant_country, String
       const :registrant_different_address, T.nilable(T::Boolean)
       const :registrant_ppb_country, T.nilable(String)
-      const :registrant_state, LobbyingDisclosureClient::Enums::State
+      const :registrant_state, T.nilable(LobbyingDisclosureClient::Enums::State)
       const :registrant_zip, T.nilable(String)
       const :termination_date, T.nilable(Date)
       const :url, String
