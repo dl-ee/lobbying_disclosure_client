@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lobbying_disclosure_client (0.0.3)
+    lobbying_disclosure_client (0.0.4)
       bigdecimal (~> 3)
       faraday (~> 2)
       sorbet-runtime (~> 0.5)
