@@ -14,6 +14,7 @@ require_relative 'lobbying_disclosure_client/auth/password/reset/confirm'
 require_relative 'lobbying_disclosure_client/client'
 
 require_relative 'lobbying_disclosure_client/interfaces'
+require_relative 'lobbying_disclosure_client/interfaces/list_endpoint'
 require_relative 'lobbying_disclosure_client/interfaces/list_endpoint_input'
 require_relative 'lobbying_disclosure_client/interfaces/list_endpoint_output'
 require_relative 'lobbying_disclosure_client/interfaces/validatable_enum'

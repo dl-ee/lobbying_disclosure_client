@@ -6,6 +6,11 @@ module LobbyingDisclosureClient
     module ContributionReports
       class ListContributionReports
         extend T::Sig
+        extend T::Generic
+        include LobbyingDisclosureClient::Interfaces::ListEndpoint
+
+        ListEndpointInputType = type_template { { fixed: Input } }
+        ListEndpointOutputType = type_template { { fixed: Output } }
 
         class Input < T::Struct
           include LobbyingDisclosureClient::Interfaces::ListEndpointInput
@@ -44,7 +49,7 @@ module LobbyingDisclosureClient
         end
 
         sig do
-          params(
+          override.params(
             input: Input
           ).returns(Output)
         end
