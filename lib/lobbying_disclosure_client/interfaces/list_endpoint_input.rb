@@ -11,6 +11,13 @@ module LobbyingDisclosureClient
       requires_ancestor { T::Struct }
 
       sig do
+        abstract.params(
+          args: T.untyped
+        ).returns(T.self_type)
+      end
+      def with(args); end
+
+      sig do
         abstract.returns(T.nilable(String))
       end
       def ordering; end

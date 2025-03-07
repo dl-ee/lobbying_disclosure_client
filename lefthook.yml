@@ -2,7 +2,7 @@ pre-commit:
   parallel: true
   commands:
     Rubocop:
-      glob: "{*.rb,*.rake,Rakefile}"
+      glob: "{*.rb,*.rake,Rakefile,.rubocop.yml}"
       run: bundle exec rubocop  --color --force-exclusion --format simple
     Sorbet:
       glob: "{*.rb,*.rake,Rakefile}"

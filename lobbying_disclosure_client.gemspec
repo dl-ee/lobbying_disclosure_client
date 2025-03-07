@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'bigdecimal', '~> 3'
   spec.add_dependency 'faraday', '~> 2'
   spec.add_dependency 'sorbet-runtime', '~> 0.5'
-  spec.add_dependency 'uri', '>= 0.13.2'
+  spec.add_dependency 'uri', '~> 0.13.2'
 
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
