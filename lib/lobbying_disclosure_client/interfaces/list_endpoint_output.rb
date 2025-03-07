@@ -8,6 +8,7 @@ module LobbyingDisclosureClient
       extend T::Sig
 
       interface!
+      requires_ancestor { T::Struct }
 
       sig do
         abstract.returns(Integer)
